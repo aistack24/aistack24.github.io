@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AIStack24 | Gadget-Universum fuer schnelle Finds</title>
-  <meta name="description" content="AIStack24 zeigt taeglich 3 Gadget- und Tool-Finds fuer Buero, Setup und Alltag. Eine schnelle Affiliate-Landingpage fuer Klicks statt Gelaber.">
+  <title>AIStack24 | Virale Internet-Finds fuer Alltag, Arbeit und Zuhause</title>
+  <meta name="description" content="AIStack24 zeigt taeglich neue Internet-Finds fuer Alltag, Arbeit, Haushalt, Haustiere, Familie, Beauty und Setup. Monetarisierbar, trackbar, klar gekennzeichnet.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#07090f">
-  <meta property="og:title" content="AIStack24 - Dumme Gadgets, die Arbeit sparen">
-  <meta property="og:description" content="Taeglich 3 schnelle Gadget-Finds. Scroll durch das Setup-Universum und oeffne die heutigen Top-Links.">
+  <meta property="og:title" content="AIStack24 - 3 neue Internet-Finds pro Tag">
+  <meta property="og:description" content="Virale Produkte fuer Alltag, Arbeit, Haushalt, Haustiere, Familie und Setup. Keine Fake-Rabatte, nur klare Links.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aistack24.github.io/aistack24-hub/">
   <meta property="og:image" content="https://aistack24.github.io/aistack24-hub/assets/logo.svg">
@@ -261,6 +261,30 @@
       font-size: 12px;
       max-width: 580px;
     }
+    .category-strip {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+    .category-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 8px 11px;
+      border: 1px solid var(--line2);
+      border-radius: 999px;
+      background: rgba(255,255,255,.055);
+      color: #cbd6e4;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 850;
+    }
+    .category-chip.active {
+      color: #041007;
+      border-color: transparent;
+      background: linear-gradient(135deg, rgba(103,240,139,.95), rgba(122,215,255,.95));
+    }
     .universe-panel {
       min-height: 620px;
       position: relative;
@@ -503,6 +527,12 @@
       color: var(--muted);
       font-size: 15px;
     }
+    .find-card p b {
+      color: #eaf2fb;
+    }
+    .find-card p.problem {
+      color: #cdd8e6;
+    }
     .find-meta {
       display: flex;
       flex-wrap: wrap;
@@ -614,6 +644,16 @@
       color: var(--green);
       font-weight: 950;
     }
+    .mini-products b {
+      display: block;
+    }
+    .mini-products em {
+      display: block;
+      color: var(--muted);
+      font-style: normal;
+      font-size: 12px;
+      margin-top: 3px;
+    }
     .final {
       padding: 74px 0 96px;
     }
@@ -709,7 +749,7 @@
       <span>AIStack24</span>
       </a>
       <div class="nav-links" aria-label="Channels">
-        <span class="pill"><span class="pulse-dot"></span>3/3 Links aktiv</span>
+        <span class="pill"><span class="pulse-dot"></span>6/6 Links aktiv</span>
         <a href="https://www.youtube.com/@aistack24" rel="noopener">YouTube</a>
         <a href="https://t.me/AIStack24" rel="noopener">Telegram</a>
       </div>
@@ -720,14 +760,28 @@
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-grid">
         <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="pulse-dot"></span> Daily Drop: Buero-Gadgets unter ~20 EUR</div>
-          <h1 id="hero-title">Ein Gadget-Universum, das <span class="shine">Arbeit spart.</span></h1>
-          <p class="sub">AIStack24 ist der Linkhub fuer guenstige Gadgets, die Schreibtischarbeit weniger nervig machen. Einmal scrollen, sofort verstehen, nur klicken wenn der Fund es verdient.</p>
+          <div class="eyebrow"><span class="pulse-dot"></span> Daily Drop: Internet-Finds unter 20 EUR</div>
+          <h1 id="hero-title">3 neue Internet-Finds, die <span class="shine">Alltag weniger nervig machen.</span></h1>
+          <p class="sub">AIStack24 findet taeglich virale Produkte, die Alltag, Arbeit, Haushalt, Haustiere, Familie und Setup einfacher machen. Kurz verstehen, Kategorie waehlen, aktuellen Preis pruefen.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary magnet" href="#finds">Heutige 3 Finds oeffnen</a>
+            <a class="btn btn-primary magnet" href="#finds">Heutige Finds ansehen</a>
             <a class="btn btn-secondary magnet" href="https://t.me/AIStack24" rel="noopener">Telegram Drops holen</a>
           </div>
           <p class="micro">Affiliate-Hinweis: Links koennen Werbung oder Affiliate-Links sein. Wenn du darueber kaufst, kann AIStack24 eine Provision erhalten. Dein Preis bleibt gleich.</p>
+          <nav class="category-strip" aria-label="Produktkategorien">
+          <a class="category-chip active" href="#heute-viral">Heute viral</a>
+          <a class="category-chip active" href="#buero-und-setup">Buero &amp; Setup</a>
+          <a class="category-chip active" href="#haushalt-und-ordnung">Haushalt &amp; Ordnung</a>
+          <a class="category-chip active" href="#kueche-und-alltag">Kueche &amp; Alltag</a>
+          <a class="category-chip active" href="#beauty-und-selfcare">Beauty &amp; Selfcare</a>
+          <a class="category-chip active" href="#haustiere">Haustiere</a>
+          <a class="category-chip" href="#eltern-und-familie">Eltern &amp; Familie</a>
+          <a class="category-chip active" href="#auto-und-pendler">Auto &amp; Pendler</a>
+          <a class="category-chip active" href="#studenten-und-schule">Studenten &amp; Schule</a>
+          <a class="category-chip" href="#unter-10-eur">Unter 10 EUR</a>
+          <a class="category-chip active" href="#unter-20-eur">Unter 20 EUR</a>
+          <a class="category-chip" href="#bestseller-der-woche">Bestseller der Woche</a>
+          </nav>
         </div>
 
         <aside class="universe-panel reveal" style="--i:1" aria-label="Interactive AIStack24 gadget universe">
@@ -735,11 +789,11 @@
           <div class="orbit-ring ring-b"></div>
           <div class="orbit-ring ring-c"></div>
           <div class="core"><img src="assets/logo.svg" alt="AIStack24 logo"></div>
-          <div class="satellite s1"><b>Hook</b>3-Sek.-Test</div>
-          <div class="satellite s2"><b>Score</b>25-Punkte-Filter</div>
-          <div class="satellite s3"><b>Link</b>Tracking vor Scale</div>
-          <div class="satellite s4"><b>Drop</b>3 Finds taeglich</div>
-          <div class="satellite s5"><b>Signal</b>Nervproblem -> Klick</div>
+          <div class="satellite s1"><b>Alltag</b>kleine Probleme</div>
+          <div class="satellite s2"><b>Zuhause</b>Ordnung & Kueche</div>
+          <div class="satellite s3"><b>Familie</b>Nerven sparen</div>
+          <div class="satellite s4"><b>Setup</b>Arbeit leichter</div>
+          <div class="satellite s5"><b>Haustiere</b>sofort verstanden</div>
           <div class="scroll-cue">scroll zum oeffnen</div>
         </aside>
       </div>
@@ -747,29 +801,29 @@
 
     <section class="section wrap" aria-labelledby="world-title">
       <div class="section-head reveal">
-        <h2 id="world-title">Die Maschine hinter dem Klick.</h2>
-        <p>Jede Scroll-Ebene zeigt denselben Ablauf: nerviges Problem finden, visuell verpacken, saubersten Link nach vorne schieben.</p>
+        <h2 id="world-title">Nicht nur Technik. Alles, was nervt.</h2>
+        <p>AIStack24 testet Nischen parallel: Haushalt, Setup, Kueche, Beauty, Haustiere, Familie, Auto, Studenten und Offline-Hobbys.</p>
       </div>
       <div class="story">
         <article class="story-step reveal">
           <div class="step-number">01</div>
           <div class="step-copy">
             <h3>Wir jagen kleine Nervprobleme.</h3>
-            <p>Kabel, schlechte Laptop-Hoehe, chaotische Setups, fehlende Ports, mieses Licht. Wenn das Problem in einer Sekunde sichtbar ist, kann es Traffic bewegen.</p>
+            <p>Chaotische Schubladen, Tierhaare, Kabelsalat, Taschen-Chaos, Kuechenreste, Auto-Kram. Wenn das Problem in drei Sekunden sichtbar ist, darf es in den Test.</p>
           </div>
         </article>
         <article class="story-step reveal" style="--i:1">
           <div class="step-number">02</div>
           <div class="step-copy">
-            <h3>Wir scoren vor dem Post.</h3>
-            <p>Trend, Problem, visueller Punch, Affiliate-Potenzial, Einfachheit. Schwaches Zeug fliegt raus. Starkes Zeug wird Short, Pin, Post und Link.</p>
+            <h3>Wir testen nur kaufbare Finds.</h3>
+            <p>Kein Thema ohne Umsatzpfad. Jeder Drop braucht einen sichtbaren Nutzen, einen sauberen Link und eine klare Kennzeichnung.</p>
           </div>
         </article>
         <article class="story-step reveal" style="--i:2">
           <div class="step-number">03</div>
           <div class="step-copy">
-            <h3>Wir verwandeln Neugier in Klicks.</h3>
-            <p>Keine Fake-Rabatte. Keine Fake-Bewertungen. Nur harter CTA, klare Kennzeichnung und ein Produkt, das schnell genug Sinn ergibt.</p>
+            <h3>Wir skalieren, was klickt.</h3>
+            <p>Gewinner werden Serien: gleiche Struktur, neue Nische, neuer Schmerz. Verlierer verschwinden aus Queue und Linkhub.</p>
           </div>
         </article>
       </div>
@@ -777,8 +831,8 @@
 
     <section id="finds" class="section wrap" aria-labelledby="finds-title">
       <div class="section-head reveal">
-        <h2 id="finds-title">Heutige 3 Finds.</h2>
-        <p>Diese Karten kommen aus <code>data/tools.json</code>. Echte Bilder und Portal-Links fallen rein, sobald Affiliate-Freigabe da ist.</p>
+        <h2 id="finds-title">Heute viral.</h2>
+        <p>Ausgewaehlte Internet-Finds aus mehreren Nischen. Preise, Verfuegbarkeit und Details immer direkt beim Anbieter pruefen.</p>
       </div>
       <div class="products">
 
@@ -792,21 +846,22 @@
             <div class="find-content">
               <div class="find-kicker">
                 <span>#1</span>
-                <span>23/25 score</span>
+                <span>Top-Fund</span>
               </div>
-              <h3>USB-Stick / Mini-Display fuer den Schreibtisch</h3>
-              <p>Kleines Display fuer Statusdaten, Setup-Spielerei oder Schreibtisch-Flex. Sieht sofort interessant aus und erklaert sich in Sekunden.</p>
+              <h3>Tierhaar-Entferner fuer Sofa und Kleidung</h3>
+              <p class="problem"><b>Problem:</b> Tierhaare kleben auf Sofa, Kleidung und Autositzen.</p>
+              <p><b>Nutzen:</b> Macht Haarentfernung sichtbar und schnell demonstrierbar.</p>
               <div class="find-meta">
-                <span>micro display</span>
-                <span>office</span>
-                <span>under ~20 EUR</span>
+                <span>Haustiere</span>
+                <span>Amazon</span>
+                <span>unter 20 EUR</span>
               </div>
             </div>
-            <a class="find-cta" href="https://www.amazon.de/s?k=usb+display+mini+pc+status+monitor&amp;tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=office_gadgets" rel="sponsored nofollow noopener">
-              <span>Open the find</span>
+            <a class="find-cta" href="https://www.amazon.de/s?k=tierhaar+entferner+sofa+kleidung&amp;tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=multi_niche" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
               <b>-></b>
             </a>
-            <small>Affiliate link live. Replace placeholder image and link after portal approval.</small>
+            <small>Affiliate-Link aktiv. Aktuellen Preis und Details immer beim Anbieter pruefen.</small>
           </article>
 
           <article class="find-card reveal" style="--i:1">
@@ -819,21 +874,22 @@
             <div class="find-content">
               <div class="find-kicker">
                 <span>#2</span>
-                <span>23/25 score</span>
+                <span>Top-Fund</span>
               </div>
-              <h3>Faltbarer Laptop-Staender fuer Homeoffice</h3>
-              <p>Hebt den Laptop an, raeumt den Arbeitsplatz optisch auf und macht Calls weniger improvisiert.</p>
+              <h3>Schubladen-Organizer fuer Haushalt und Bad</h3>
+              <p class="problem"><b>Problem:</b> Kleinteile verschwinden in Schubladen und machen jeden Griff nervig.</p>
+              <p><b>Nutzen:</b> Teilt Chaos in sichtbare Faecher und spart Suchzeit im Bad, Flur oder Haushalt.</p>
               <div class="find-meta">
-                <span>desk lift</span>
-                <span>office</span>
-                <span>under ~20 EUR</span>
+                <span>Haushalt &amp; Ordnung</span>
+                <span>Amazon</span>
+                <span>unter 20 EUR</span>
               </div>
             </div>
-            <a class="find-cta" href="https://www.amazon.de/s?k=faltbarer+laptop+st%C3%A4nder&amp;tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=office_gadgets" rel="sponsored nofollow noopener">
-              <span>Open the find</span>
+            <a class="find-cta" href="https://www.amazon.de/s?k=schubladen+organizer+bad+haushalt&amp;tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=multi_niche" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
               <b>-></b>
             </a>
-            <small>Affiliate link live. Replace placeholder image and link after portal approval.</small>
+            <small>Affiliate-Link aktiv. Aktuellen Preis und Details immer beim Anbieter pruefen.</small>
           </article>
 
           <article class="find-card reveal" style="--i:2">
@@ -846,21 +902,106 @@
             <div class="find-content">
               <div class="find-kicker">
                 <span>#3</span>
-                <span>22/25 score</span>
+                <span>Heute beliebt</span>
               </div>
               <h3>Kabel-Clip-Set fuer den Schreibtisch</h3>
-              <p>Kleine Kabelkontrolle gegen taegliches Schreibtisch-Chaos. Billig, offensichtlich, nuetzlich.</p>
+              <p class="problem"><b>Problem:</b> Kabel fallen hinter den Schreibtisch oder liegen sichtbar herum.</p>
+              <p><b>Nutzen:</b> Haelt Ladekabel, Maus- und USB-Kabel greifbar und macht den Arbeitsplatz ruhiger.</p>
               <div class="find-meta">
-                <span>cable control</span>
-                <span>office</span>
-                <span>under ~20 EUR</span>
+                <span>Buero &amp; Setup</span>
+                <span>Amazon</span>
+                <span>unter 20 EUR</span>
               </div>
             </div>
-            <a class="find-cta" href="https://www.amazon.de/s?k=kabel+clip+set+schreibtisch&amp;tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=office_gadgets" rel="sponsored nofollow noopener">
-              <span>Open the find</span>
+            <a class="find-cta" href="https://www.amazon.de/s?k=kabel+clip+set+schreibtisch&amp;tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=multi_niche" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
               <b>-></b>
             </a>
-            <small>Affiliate link live. Replace placeholder image and link after portal approval.</small>
+            <small>Affiliate-Link aktiv. Aktuellen Preis und Details immer beim Anbieter pruefen.</small>
+          </article>
+
+          <article class="find-card reveal" style="--i:3">
+            <div class="find-orbit" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="find-visual">
+              <svg viewBox="0 0 220 160" role="img" aria-label="Gadget placeholder"><rect x="54" y="38" width="112" height="84" rx="22"/><path d="M84 82h52M110 56v52"/></svg>
+            </div>
+            <div class="find-content">
+              <div class="find-kicker">
+                <span>#4</span>
+                <span>Heute beliebt</span>
+              </div>
+              <h3>Beauty- und Travel-Organizer</h3>
+              <p class="problem"><b>Problem:</b> Pflegeprodukte, Kabel und Kleinkram fliegen in Tasche oder Bad herum.</p>
+              <p><b>Nutzen:</b> Sortiert Selfcare-Zeug sichtbar und macht Packen oder Bad-Routine weniger stressig.</p>
+              <div class="find-meta">
+                <span>Beauty &amp; Selfcare</span>
+                <span>Amazon</span>
+                <span>unter 20 EUR</span>
+              </div>
+            </div>
+            <a class="find-cta" href="https://www.amazon.de/s?k=beauty+travel+organizer&amp;tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=multi_niche" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
+              <b>-></b>
+            </a>
+            <small>Affiliate-Link aktiv. Aktuellen Preis und Details immer beim Anbieter pruefen.</small>
+          </article>
+
+          <article class="find-card reveal" style="--i:4">
+            <div class="find-orbit" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="find-visual">
+              <svg viewBox="0 0 220 160" role="img" aria-label="Gadget placeholder"><rect x="54" y="38" width="112" height="84" rx="22"/><path d="M84 82h52M110 56v52"/></svg>
+            </div>
+            <div class="find-content">
+              <div class="find-kicker">
+                <span>#5</span>
+                <span>Heute beliebt</span>
+              </div>
+              <h3>Auto-Organizer fuer Ruecksitz und Pendler</h3>
+              <p class="problem"><b>Problem:</b> Auto, Kindersitze und Pendlerzeug werden schnell zur Ablageflaeche.</p>
+              <p><b>Nutzen:</b> Schafft Taschen, Faecher und schnellen Zugriff fuer Alltag, Familie und Fahrten.</p>
+              <div class="find-meta">
+                <span>Auto &amp; Pendler</span>
+                <span>Amazon</span>
+                <span>unter 20 EUR</span>
+              </div>
+            </div>
+            <a class="find-cta" href="https://www.amazon.de/s?k=auto+organizer+ruecksitz+pendler&amp;tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=multi_niche" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
+              <b>-></b>
+            </a>
+            <small>Affiliate-Link aktiv. Aktuellen Preis und Details immer beim Anbieter pruefen.</small>
+          </article>
+
+          <article class="find-card reveal" style="--i:5">
+            <div class="find-orbit" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="find-visual">
+              <svg viewBox="0 0 220 160" role="img" aria-label="Gadget placeholder"><rect x="54" y="38" width="112" height="84" rx="22"/><path d="M84 82h52M110 56v52"/></svg>
+            </div>
+            <div class="find-content">
+              <div class="find-kicker">
+                <span>#6</span>
+                <span>Heute beliebt</span>
+              </div>
+              <h3>Silikon-Deckel und Aufbewahrungshelfer</h3>
+              <p class="problem"><b>Problem:</b> Reste, Schuesseln und Dosen landen offen oder mit wackeliger Folie im Kuehlschrank.</p>
+              <p><b>Nutzen:</b> Macht Aufbewahren schneller und reduziert das nervige Suchen nach passenden Deckeln.</p>
+              <div class="find-meta">
+                <span>Kueche &amp; Alltag</span>
+                <span>Amazon</span>
+                <span>unter 20 EUR</span>
+              </div>
+            </div>
+            <a class="find-cta" href="https://www.amazon.de/s?k=silikon+deckel+aufbewahrung+kueche&amp;tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=multi_niche" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
+              <b>-></b>
+            </a>
+            <small>Affiliate-Link aktiv. Aktuellen Preis und Details immer beim Anbieter pruefen.</small>
           </article>
       </div>
     </section>
@@ -868,22 +1009,25 @@
     <section class="section wrap" aria-labelledby="control-title">
       <div class="control-room">
         <div class="panel reveal">
-          <h3 id="control-title">Trust ohne Theater.</h3>
-          <p>Die Seite verkauft den Klick, nicht eine Fantasie. Wenn ein Link noch nicht monetarisiert ist, sagt der CTA genau das.</p>
+          <h3 id="control-title">Sauber klicken.</h3>
+          <p>Die Seite zeigt Produktideen, keine erfundenen Versprechen. Jeder Werbe- oder Partnerlink bleibt sichtbar gekennzeichnet.</p>
           <ul class="signal-list">
             <li><span>1</span><div><b>Sichtbare Kennzeichnung.</b><br>Der Affiliate-Hinweis kommt vor dem ersten Produktklick.</div></li>
-            <li><span>2</span><div><b>Keine Fake-Preise.</b><br>Preise werden nicht erfunden. Die Anbieter-Seite entscheidet.</div></li>
-            <li><span>3</span><div><b>Taeglicher Austausch.</b><br>Tools JSON kann die Produktliste wechseln, ohne das Design neu zu bauen.</div></li>
+            <li><span>2</span><div><b>Keine Fake-Preise.</b><br>Preise, Versand und Verfuegbarkeit werden beim Anbieter geprueft.</div></li>
+            <li><span>3</span><div><b>Mehrere Nischen.</b><br>Haushalt, Haustiere, Familie, Beauty, Auto, Studenten und Setup laufen parallel.</div></li>
           </ul>
         </div>
         <div class="panel reveal" style="--i:1">
           <h3>Was ist heute geladen?</h3>
-          <p>Der aktuelle Produkt-Stack ist fuer das Buero-Gadget-Thema vorbereitet.</p>
+          <p>Der aktuelle Stack mischt mehrere Cluster, damit AIStack24 nicht in einer einzigen Produktnische stecken bleibt.</p>
           <ul class="mini-products">
 
-              <li><span>01</span><b>USB-Stick / Mini-Display fuer den Schreibtisch</b></li>
-              <li><span>02</span><b>Faltbarer Laptop-Staender fuer Homeoffice</b></li>
-              <li><span>03</span><b>Kabel-Clip-Set fuer den Schreibtisch</b></li>
+              <li><span>01</span><b>Tierhaar-Entferner fuer Sofa und Kleidung</b><em>Haustiere</em></li>
+              <li><span>02</span><b>Schubladen-Organizer fuer Haushalt und Bad</b><em>Haushalt &amp; Ordnung</em></li>
+              <li><span>03</span><b>Kabel-Clip-Set fuer den Schreibtisch</b><em>Buero &amp; Setup</em></li>
+              <li><span>04</span><b>Beauty- und Travel-Organizer</b><em>Beauty &amp; Selfcare</em></li>
+              <li><span>05</span><b>Auto-Organizer fuer Ruecksitz und Pendler</b><em>Auto &amp; Pendler</em></li>
+              <li><span>06</span><b>Silikon-Deckel und Aufbewahrungshelfer</b><em>Kueche &amp; Alltag</em></li>
           </ul>
         </div>
       </div>
@@ -891,16 +1035,16 @@
 
     <section class="final wrap">
       <div class="final-box reveal">
-        <h2>Speicher das Portal. Morgen sieht die Welt anders aus.</h2>
-        <p>AIStack24 ist auf Geschwindigkeit gebaut: drei Finds, ein sauberer Linkhub, kein Umherirren. Was klickt, wird multipliziert. Was nicht klickt, verschwindet.</p>
-        <a class="btn btn-primary magnet" href="#finds">Heutigen Stack oeffnen</a>
+        <h2>Speicher das Portal. Morgen kommt eine neue Nische.</h2>
+        <p>AIStack24 ist auf Geschwindigkeit gebaut: Internet-Finds, saubere Links, kurze Nutzenclaims. Was klickt, wird multipliziert. Was nicht klickt, verschwindet.</p>
+        <a class="btn btn-primary magnet" href="#finds">Heutige Produkte ansehen</a>
       </div>
     </section>
   </main>
 
   <footer class="wrap">
     <div class="footer-grid">
-      <div><b>AIStack24</b><br>Taeglich dumme Tools und Gadgets, die Arbeit sparen.</div>
+      <div><b>AIStack24</b><br>Taeglich dumme Tools und Produkte, die Arbeit sparen, Nerven sparen oder den Alltag einfacher machen.</div>
       <div>Affiliate-Hinweis: Links koennen Werbung / Affiliate-Links sein. Als Partner verdienen wir an qualifizierten Kaeufen. Keine erfundenen Rabatte, keine Fake-Bewertungen.</div>
     </div>
   </footer>
