@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Fitnessbaender-Set fuer Zuhause und Gym">
+  <rect width="900" height="620" rx="38" fill="#f1eadf"/>
+  <rect x="48" y="48" width="804" height="524" rx="30" fill="#ffffff" opacity=".72"/>
+  <path d="M128 420c78-112 164-118 258-18s202 96 322-38" fill="none" stroke="#c58f66" stroke-width="18" stroke-linecap="round"/>
+  <rect x="132" y="122" width="250" height="170" rx="32" fill="#342f2a" opacity=".13"/>
+  <rect x="520" y="116" width="210" height="210" rx="42" fill="#c58f66" opacity=".18"/>
+  <circle cx="292" cy="356" r="54" fill="#c58f66" opacity=".28"/>
+  <circle cx="640" cy="410" r="72" fill="#342f2a" opacity=".12"/>
+  <text x="86" y="96" fill="#342f2a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Fitness &amp; Gym</text>
+  <text x="86" y="520" fill="#342f2a" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">Training zuhause, aber kein Platz fuer Geraete?</text>
+</svg>
