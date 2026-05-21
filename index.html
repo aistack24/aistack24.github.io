@@ -6,56 +6,75 @@
   <title>AIStack24 - Produkte gegen nervige Alltagsprobleme</title>
   <meta name="description" content="Taeglich neue Internet-Finds fuer Kabelchaos, Haushalt, Haustiere, Kueche, Auto, Familie und Homeoffice. Kleine Produkte, die echte Probleme loesen.">
   <meta name="robots" content="index,follow">
-  <meta name="theme-color" content="#111418">
+  <meta name="theme-color" content="#07101f">
   <meta property="og:title" content="AIStack24 - Produkte gegen nervige Alltagsprobleme">
   <meta property="og:description" content="Problem sehen, Loesung finden, Produkt pruefen. Internet-Finds fuer Alltag, Arbeit und Zuhause.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aistack24.github.io/aistack24-hub/">
-  <meta property="og:image" content="https://aistack24.github.io/aistack24-hub/assets/logo.svg">
+  <meta property="og:image" content="https://aistack24.github.io/aistack24-hub/assets/logo-2048.png">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/logo-2048.png">
   <style>
     :root {
       color-scheme: dark;
-      --bg: #111418;
-      --bg-soft: #171b20;
-      --panel: #1d2228;
-      --panel-2: #222832;
-      --text: #f7f3ea;
-      --muted: #b7b0a6;
-      --line: rgba(247, 243, 234, .12);
-      --line-strong: rgba(247, 243, 234, .2);
-      --accent: #f2b56b;
-      --accent-2: #79a8ff;
-      --cta: #f2c97d;
-      --cta-text: #15130f;
+      --bg: #07101f;
+      --bg-2: #09172b;
+      --panel: rgba(10, 23, 43, .86);
+      --panel-solid: #0e1b31;
+      --card: #0f1c32;
+      --card-2: #101f39;
+      --text: #f7fbff;
+      --muted: #9fb0ca;
+      --soft: #dbe8ff;
+      --line: rgba(144, 181, 255, .18);
+      --line-strong: rgba(144, 181, 255, .34);
+      --blue: #1f7dff;
+      --blue-2: #59a7ff;
+      --blue-3: #0b42bd;
+      --buy: #f7fbff;
+      --buy-text: #07101f;
       --max: 1160px;
-      --radius: 22px;
-      --shadow: 0 24px 70px rgba(0, 0, 0, .34);
+      --radius: 20px;
+      --shadow: 0 28px 90px rgba(0, 0, 0, .38);
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; background: var(--bg); }
     body {
       margin: 0;
+      min-width: 320px;
       color: var(--text);
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       line-height: 1.5;
       background:
-        radial-gradient(circle at 80% 0%, rgba(121,168,255,.16), transparent 30%),
-        radial-gradient(circle at 18% 12%, rgba(242,181,107,.13), transparent 28%),
-        linear-gradient(180deg, #111418 0%, #15191e 48%, #101215 100%);
+        linear-gradient(rgba(144,181,255,.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(144,181,255,.035) 1px, transparent 1px),
+        linear-gradient(145deg, #07101f 0%, #0a1930 44%, #07101f 100%);
+      background-size: 42px 42px, 42px 42px, auto;
+      text-rendering: optimizeLegibility;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(115deg, rgba(31,125,255,.24), transparent 28%),
+        linear-gradient(290deg, rgba(89,167,255,.12), transparent 32%);
+      mask-image: linear-gradient(#000, transparent 72%);
     }
     a { color: inherit; }
+    img { max-width: 100%; }
     .wrap { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
     .site-header {
       position: sticky;
       top: 0;
-      z-index: 10;
-      background: rgba(17, 20, 24, .78);
+      z-index: 20;
+      background: rgba(7, 16, 31, .78);
       backdrop-filter: blur(18px);
       border-bottom: 1px solid var(--line);
     }
     .nav {
-      min-height: 74px;
+      min-height: 72px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -66,58 +85,81 @@
       align-items: center;
       gap: 12px;
       text-decoration: none;
-      font-weight: 900;
-      letter-spacing: -.02em;
+      font-weight: 950;
+      letter-spacing: -.03em;
     }
-    .brand img { width: 42px; height: 42px; border-radius: 13px; }
+    .brand img {
+      width: 46px;
+      height: 46px;
+      border-radius: 15px;
+      box-shadow: 0 10px 28px rgba(31,125,255,.32);
+    }
     .nav-actions {
       display: flex;
       align-items: center;
       gap: 10px;
       color: var(--muted);
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 800;
+    }
+    .nav-actions span {
+      color: var(--soft);
+      padding: 9px 11px;
+      border-radius: 999px;
+      background: rgba(31,125,255,.12);
+      border: 1px solid rgba(89,167,255,.22);
     }
     .nav-actions a {
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
       text-decoration: none;
-      padding: 10px 13px;
+      padding: 9px 13px;
       border: 1px solid var(--line);
       border-radius: 999px;
-      background: rgba(255,255,255,.035);
+      background: rgba(255,255,255,.045);
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
     }
+    .nav-actions a:hover { transform: translateY(-1px); border-color: var(--line-strong); background: rgba(255,255,255,.075); }
     .hero {
-      padding: clamp(58px, 9vw, 112px) 0 34px;
+      position: relative;
+      padding: clamp(52px, 7vw, 98px) 0 28px;
     }
     .hero-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 360px;
+      grid-template-columns: minmax(0, 1fr) minmax(310px, 390px);
       gap: clamp(24px, 5vw, 64px);
       align-items: center;
     }
+    .hero-grid > *, .section-head > *, .footer-grid > * { min-width: 0; }
     .eyebrow {
       display: inline-flex;
       align-items: center;
       width: fit-content;
       padding: 8px 11px;
-      border: 1px solid rgba(242,181,107,.35);
+      border: 1px solid rgba(89,167,255,.38);
       border-radius: 999px;
-      color: #ffe1b8;
-      background: rgba(242,181,107,.09);
+      color: #d9e9ff;
+      background: rgba(31,125,255,.13);
       font-size: 13px;
-      font-weight: 850;
+      font-weight: 900;
     }
     h1 {
       margin: 18px 0 0;
       max-width: 860px;
-      font-size: clamp(48px, 8vw, 94px);
-      line-height: .95;
-      letter-spacing: -.06em;
+      font-size: clamp(52px, 8vw, 100px);
+      line-height: .91;
+      letter-spacing: -.07em;
+    }
+    h1 span {
+      color: #8cc3ff;
+      text-shadow: 0 0 34px rgba(31,125,255,.38);
     }
     .hero p {
-      max-width: 720px;
+      max-width: 700px;
       margin: 22px 0 0;
       color: var(--muted);
-      font-size: clamp(18px, 2vw, 22px);
+      font-size: clamp(17px, 2vw, 22px);
     }
     .hero-actions {
       display: flex;
@@ -126,7 +168,7 @@
       margin-top: 30px;
     }
     .btn {
-      min-height: 50px;
+      min-height: 52px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -134,38 +176,83 @@
       padding: 13px 18px;
       border-radius: 999px;
       text-decoration: none;
-      font-weight: 900;
+      font-weight: 950;
       border: 1px solid var(--line);
-      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease, box-shadow .18s ease;
     }
     .btn:hover { transform: translateY(-2px); border-color: var(--line-strong); }
     .btn-primary {
-      background: var(--cta);
-      color: var(--cta-text);
+      background: linear-gradient(135deg, var(--buy), #dcecff);
+      color: var(--buy-text);
       border-color: transparent;
-      box-shadow: 0 16px 34px rgba(242,201,125,.18);
+      box-shadow: 0 18px 42px rgba(31,125,255,.24);
     }
-    .btn-secondary { background: rgba(255,255,255,.045); color: var(--text); }
+    .btn-secondary { background: rgba(255,255,255,.055); color: var(--text); }
     .hero-card {
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.035));
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(144,181,255,.28);
+      border-radius: 30px;
+      background:
+        linear-gradient(150deg, rgba(31,125,255,.20), transparent 38%),
+        linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.035));
       box-shadow: var(--shadow);
       padding: 22px;
     }
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      top: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.8), transparent);
+    }
     .hero-card img {
-      width: 76px;
-      height: 76px;
-      border-radius: 22px;
+      width: 78px;
+      height: 78px;
+      border-radius: 24px;
       display: block;
+      box-shadow: 0 18px 36px rgba(31,125,255,.32);
     }
     .hero-card h2 {
       margin: 24px 0 10px;
-      font-size: 28px;
+      font-size: 30px;
       line-height: 1.02;
-      letter-spacing: -.04em;
+      letter-spacing: -.05em;
     }
-    .hero-card p { margin: 0; font-size: 15px; }
+    .hero-card p { margin: 0; color: var(--muted); font-size: 15px; }
+    .hero-problems {
+      display: grid;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .hero-problem {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(7,16,31,.42);
+      text-decoration: none;
+    }
+    .hero-problem span {
+      width: 34px;
+      height: 34px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--blue), var(--blue-3));
+      color: #fff;
+      font-size: 12px;
+      font-weight: 950;
+    }
+    .hero-problem b {
+      font-size: 14px;
+      line-height: 1.15;
+    }
     .stat-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -175,89 +262,106 @@
     .stat {
       padding: 14px;
       border-radius: 18px;
-      background: rgba(0,0,0,.18);
+      background: rgba(0,0,0,.22);
       border: 1px solid var(--line);
     }
-    .stat b { display: block; font-size: 24px; color: var(--accent); }
+    .stat b { display: block; font-size: 26px; color: #8cc3ff; }
     .stat span { color: var(--muted); font-size: 12px; }
-    .problem-strip {
-      padding: 22px 0 34px;
-    }
+    .problem-strip { padding: 18px 0 28px; }
     .chips {
       display: flex;
-      flex-wrap: wrap;
       gap: 10px;
+      overflow-x: auto;
+      padding: 2px 0 10px;
+      scrollbar-width: thin;
     }
     .chip {
       display: inline-flex;
-      min-height: 38px;
+      min-height: 40px;
       align-items: center;
+      flex: 0 0 auto;
       padding: 9px 13px;
       border-radius: 999px;
       border: 1px solid var(--line);
-      background: rgba(255,255,255,.035);
+      background: rgba(255,255,255,.045);
       text-decoration: none;
-      color: #ded8ce;
+      color: #dbe7fb;
       font-size: 14px;
-      font-weight: 800;
+      font-weight: 850;
     }
     .chip.active {
-      background: rgba(121,168,255,.13);
-      border-color: rgba(121,168,255,.33);
-      color: #dce8ff;
+      background: rgba(31,125,255,.17);
+      border-color: rgba(89,167,255,.42);
+      color: #fff;
     }
-    .section {
-      padding: 56px 0;
-    }
+    .section { padding: 54px 0; }
     .section-head {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(260px, 390px);
+      grid-template-columns: minmax(0, 1fr) minmax(250px, 390px);
       gap: 24px;
       align-items: end;
       margin-bottom: 24px;
     }
     .section-label {
-      color: var(--accent);
+      color: #8cc3ff;
       font-size: 13px;
       text-transform: uppercase;
-      letter-spacing: .08em;
-      font-weight: 900;
+      letter-spacing: .09em;
+      font-weight: 950;
       margin-bottom: 10px;
     }
     h2 {
       margin: 0;
       font-size: clamp(34px, 5vw, 62px);
       line-height: .98;
-      letter-spacing: -.055em;
+      letter-spacing: -.06em;
     }
     .section-head p {
       margin: 0;
       color: var(--muted);
-      font-size: 16px;
+      font-size: 15px;
     }
     .solutions-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(276px, 340px));
+      grid-template-columns: repeat(auto-fit, minmax(270px, 330px));
       justify-content: center;
-      gap: 18px;
+      gap: 16px;
     }
     .solution-card {
+      position: relative;
       overflow: hidden;
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      background: rgba(29, 34, 40, .86);
-      box-shadow: 0 16px 44px rgba(0,0,0,.26);
+      background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.025)), var(--card);
+      box-shadow: 0 16px 46px rgba(0,0,0,.30);
       transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
     }
     .solution-card:hover {
       transform: translateY(-4px);
-      border-color: rgba(242,201,125,.38);
-      box-shadow: 0 22px 62px rgba(0,0,0,.34);
+      border-color: rgba(89,167,255,.48);
+      box-shadow: 0 24px 70px rgba(0,0,0,.40);
+    }
+    .card-index {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 2;
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: rgba(7,16,31,.72);
+      border: 1px solid rgba(255,255,255,.22);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 950;
+      backdrop-filter: blur(10px);
     }
     .image-link {
       display: block;
-      background: #f4efe6;
-      aspect-ratio: 1.45 / 1;
+      background: #eef5ff;
+      aspect-ratio: 1.42 / 1;
       overflow: hidden;
     }
     .image-link img {
@@ -265,46 +369,49 @@
       height: 100%;
       display: block;
       object-fit: cover;
+      transition: transform .28s ease;
     }
-    .card-body {
-      padding: 18px;
-    }
+    .solution-card:hover .image-link img { transform: scale(1.035); }
+    .card-body { padding: 16px; }
     .card-topline {
       display: flex;
       justify-content: space-between;
-      gap: 10px;
-      color: #d0c7ba;
-      font-size: 12px;
-      font-weight: 850;
+      gap: 8px;
+      color: #d8e6fb;
+      font-size: 11px;
+      font-weight: 900;
       margin-bottom: 12px;
     }
     .card-topline span {
-      padding: 6px 9px;
+      min-width: 0;
+      padding: 6px 8px;
       border-radius: 999px;
       border: 1px solid var(--line);
-      background: rgba(255,255,255,.035);
+      background: rgba(255,255,255,.045);
       white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .solution-card h3 {
       margin: 0;
-      font-size: 25px;
+      font-size: 24px;
       line-height: 1.05;
       letter-spacing: -.045em;
     }
     .problem {
-      margin: 12px 0 0;
-      color: #d4cec4;
+      margin: 11px 0 0;
+      color: #d5e2f8;
       font-size: 14px;
     }
     .solution {
-      margin: 10px 0 0;
+      margin: 9px 0 0;
       color: var(--muted);
       font-size: 14px;
     }
     .solution-card h4 {
-      margin: 16px 0 0;
+      margin: 15px 0 0;
       font-size: 15px;
-      color: #fff7e8;
+      color: #ffffff;
     }
     .card-cta {
       min-height: 48px;
@@ -314,18 +421,19 @@
       gap: 12px;
       margin-top: 14px;
       padding: 12px 14px;
-      border-radius: 15px;
-      background: var(--cta);
-      color: var(--cta-text);
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--blue), var(--blue-3));
+      color: #fff;
       text-decoration: none;
       font-weight: 950;
-      transition: transform .18s ease, background .18s ease;
+      box-shadow: 0 14px 30px rgba(31,125,255,.22);
+      transition: transform .18s ease, filter .18s ease;
     }
-    .card-cta:hover { transform: translateY(-1px); background: #ffd892; }
+    .card-cta:hover { transform: translateY(-1px); filter: brightness(1.08); }
     .solution-card small {
       display: block;
-      margin-top: 11px;
-      color: #928a80;
+      margin-top: 10px;
+      color: #7f91ad;
       font-size: 12px;
     }
     .why {
@@ -336,7 +444,7 @@
     .why-card {
       border: 1px solid var(--line);
       border-radius: 20px;
-      background: rgba(255,255,255,.035);
+      background: rgba(255,255,255,.045);
       padding: 18px;
     }
     .why-card b {
@@ -351,17 +459,17 @@
       font-size: 14px;
     }
     .affiliate-box {
-      margin-top: 30px;
-      border: 1px solid rgba(242,181,107,.28);
+      margin-top: 28px;
+      border: 1px solid rgba(89,167,255,.30);
       border-radius: 20px;
-      background: rgba(242,181,107,.08);
-      padding: 16px;
-      color: #e8dac8;
+      background: rgba(31,125,255,.10);
+      padding: 15px;
+      color: #d8e6fb;
       font-size: 13px;
     }
     footer {
-      padding: 36px 0 54px;
-      color: #9d958b;
+      padding: 36px 0 74px;
+      color: #899ab5;
       font-size: 13px;
     }
     .footer-grid {
@@ -377,21 +485,65 @@
       flex-wrap: wrap;
       justify-content: flex-end;
     }
-    .footer-links a { text-decoration: none; color: #d8d0c6; }
+    .footer-links a { text-decoration: none; color: #dbe7fb; }
+    .mobile-bar { display: none; }
     @media (max-width: 860px) {
       .hero-grid, .section-head, .why, .footer-grid { grid-template-columns: 1fr; }
-      .hero-card { order: -1; }
+      .hero-grid { gap: 22px; }
       .footer-links { justify-content: flex-start; }
     }
     @media (max-width: 560px) {
-      .wrap { width: min(100% - 24px, var(--max)); }
-      .nav { min-height: 66px; }
+      .wrap { width: min(var(--max), calc(100% - 22px)); }
+      .nav { min-height: 64px; }
+      .brand img { width: 40px; height: 40px; border-radius: 13px; }
       .nav-actions { display: none; }
-      .hero { padding-top: 42px; }
-      h1 { font-size: clamp(42px, 14vw, 68px); }
+      .hero { padding-top: 34px; }
+      h1 {
+        font-size: clamp(38px, 12.4vw, 54px);
+        line-height: .96;
+        letter-spacing: -.06em;
+        overflow-wrap: anywhere;
+      }
+      .hero p { font-size: 16px; }
       .hero-actions .btn { width: 100%; }
-      .solutions-grid { grid-template-columns: 1fr; }
-      .section { padding: 42px 0; }
+      .hero-card { border-radius: 24px; padding: 18px; }
+      .hero-card img { width: 62px; height: 62px; border-radius: 19px; }
+      .hero-card h2 { font-size: 25px; }
+      .hero-problems { margin-top: 16px; }
+      .problem-strip { padding-top: 6px; }
+      .chip { min-height: 38px; font-size: 13px; }
+      .solutions-grid { grid-template-columns: 1fr; gap: 14px; }
+      .solution-card { border-radius: 18px; }
+      .solution-card h3 { font-size: 23px; }
+      .section { padding: 38px 0; }
+      .section-head { gap: 12px; margin-bottom: 18px; }
+      h2 { font-size: clamp(32px, 11vw, 48px); }
+      .mobile-bar {
+        position: fixed;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        z-index: 30;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        min-height: 56px;
+        padding: 8px 9px 8px 14px;
+        border-radius: 18px;
+        border: 1px solid rgba(144,181,255,.28);
+        background: rgba(7,16,31,.88);
+        backdrop-filter: blur(18px);
+        box-shadow: 0 18px 50px rgba(0,0,0,.45);
+        text-decoration: none;
+      }
+      .mobile-bar span:first-child { font-size: 13px; color: var(--soft); font-weight: 850; }
+      .mobile-bar span:last-child {
+        padding: 10px 12px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, var(--blue), var(--blue-3));
+        font-weight: 950;
+      }
     }
   </style>
 </head>
@@ -414,18 +566,33 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <div class="eyebrow">Problem -> Loesung -> Produkt</div>
-          <h1>Welches Alltagsproblem nervt dich gerade?</h1>
-          <p>AIStack24 findet taeglich Produkte, die kleine nervige Probleme schnell loesen - von Kabelchaos bis Tierhaaren.</p>
+          <div class="eyebrow">AIStack24 findet. Du klickst. Problem weg.</div>
+          <h1>Kleine Produkte gegen <span>nervige</span> Alltagsprobleme.</h1>
+          <p>Taeglich neue Internet-Finds fuer Kabelchaos, Tierhaare, Haushalt, Gym, Auto und Homeoffice. Kurz erklaert, sauber verlinkt, direkt kaufnah.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#solutions">Heutige Loesungen ansehen</a>
-            <a class="btn btn-secondary" href="#problems">Probleme durchsuchen</a>
+            <a class="btn btn-primary" href="#solutions">Heutige Loesungen ansehen -></a>
+            <a class="btn btn-secondary" href="#problems">Problemkategorien ansehen</a>
           </div>
         </div>
         <aside class="hero-card" aria-label="AIStack24 Zusammenfassung">
           <img src="assets/logo.svg" alt="">
-          <h2>Keine Luxusprodukte. Kleine Dinge, die sofort helfen.</h2>
-          <p>Wir zeigen nur Produkte mit erkennbarem Mini-Problem, einfacher Loesung und sauberem Link.</p>
+          <h2>Heute geladene Probleme</h2>
+          <p>Erst erkennst du den Nervpunkt. Dann siehst du die einfache Produktloesung.</p>
+          <div class="hero-problems">
+
+            <a class="hero-problem" href="#solutions">
+              <span>01</span>
+              <b>Tierhaare ueberall?</b>
+            </a>
+            <a class="hero-problem" href="#solutions">
+              <span>02</span>
+              <b>Schublade komplett chaotisch?</b>
+            </a>
+            <a class="hero-problem" href="#solutions">
+              <span>03</span>
+              <b>Training zuhause, aber kein Platz fuer Geraete?</b>
+            </a>
+          </div>
           <div class="stat-row">
             <div class="stat"><b>8</b><span>Probleme geladen</span></div>
             <div class="stat"><b>8</b><span>Partnerlinks aktiv</span></div>
@@ -436,6 +603,7 @@
 
     <section id="problems" class="problem-strip" aria-label="Problemkategorien">
       <div class="wrap chips">
+          <a class="chip active" href="#solutions">Alle Probleme</a>
           <a class="chip active" href="#solutions">Kabelchaos</a>
           <a class="chip active" href="#solutions">Tierhaare</a>
           <a class="chip active" href="#solutions">Unordnung</a>
@@ -455,13 +623,14 @@
         <div class="section-head">
           <div>
             <div class="section-label">Heute geloeste Probleme</div>
-            <h2>Erst das Problem. Dann die einfache Loesung.</h2>
+            <h2>Erst der Nervpunkt. Dann der Klick zum Produkt.</h2>
           </div>
-          <p>Keine Fake-Rabatte, keine erfundenen Bewertungen, keine Preise auf der Seite. Der Button fuehrt zum Anbieter, dort pruefst du Details und aktuellen Preis.</p>
+          <p>Keine Fake-Rabatte, keine erfundenen Bewertungen, keine Preise auf der Seite. Der Button fuehrt direkt zum Produkt beim Anbieter.</p>
         </div>
         <div class="solutions-grid">
 
         <article class="solution-card">
+          <div class="card-index">01</div>
           <a class="image-link" href="https://www.amazon.de/dp/B07BN42GGB?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Tierhaar-Entferner fuer Sofa und Kleidung ansehen">
             <img src="assets/products/generated/amazon-pet-hair-remover.png" alt="Tierhaar-Entferner fuer Sofa und Kleidung" loading="lazy" width="900" height="620">
           </a>
@@ -483,6 +652,7 @@
         </article>
 
         <article class="solution-card">
+          <div class="card-index">02</div>
           <a class="image-link" href="https://www.amazon.de/dp/B09CHJYY2X?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Schubladen-Organizer fuer Bad und Haushalt ansehen">
             <img src="assets/products/generated/amazon-household-drawer-organizer.png" alt="Schubladen-Organizer fuer Bad und Haushalt" loading="lazy" width="900" height="620">
           </a>
@@ -504,6 +674,7 @@
         </article>
 
         <article class="solution-card">
+          <div class="card-index">03</div>
           <a class="image-link" href="https://www.amazon.de/dp/B08745JHW7?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Fitnessbaender-Set fuer Zuhause und Gym ansehen">
             <img src="assets/products/generated/amazon-fitness-resistance-bands.png" alt="Fitnessbaender-Set fuer Zuhause und Gym" loading="lazy" width="900" height="620">
           </a>
@@ -525,6 +696,7 @@
         </article>
 
         <article class="solution-card">
+          <div class="card-index">04</div>
           <a class="image-link" href="https://www.amazon.de/dp/B09FGJ7C6R?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Kabel-Clip-Set fuer den Schreibtisch ansehen">
             <img src="assets/products/generated/amazon-desk-cable-clip-set.png" alt="Kabel-Clip-Set fuer den Schreibtisch" loading="lazy" width="900" height="620">
           </a>
@@ -546,6 +718,7 @@
         </article>
 
         <article class="solution-card">
+          <div class="card-index">05</div>
           <a class="image-link" href="https://www.amazon.de/dp/B07JMD9XFJ?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Beauty- und Travel-Organizer ansehen">
             <img src="assets/products/generated/amazon-beauty-travel-organizer.png" alt="Beauty- und Travel-Organizer" loading="lazy" width="900" height="620">
           </a>
@@ -567,6 +740,7 @@
         </article>
 
         <article class="solution-card">
+          <div class="card-index">06</div>
           <a class="image-link" href="https://www.amazon.de/dp/B0DDQX7TZG?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Auto-Organizer fuer Ruecksitz und Pendler ansehen">
             <img src="assets/products/generated/amazon-car-backseat-organizer.png" alt="Auto-Organizer fuer Ruecksitz und Pendler" loading="lazy" width="900" height="620">
           </a>
@@ -588,6 +762,7 @@
         </article>
 
         <article class="solution-card">
+          <div class="card-index">07</div>
           <a class="image-link" href="https://www.amazon.de/dp/B0F1C1RDL7?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Silikon-Deckel und Aufbewahrungshelfer ansehen">
             <img src="assets/products/generated/amazon-kitchen-storage-lids.png" alt="Silikon-Deckel und Aufbewahrungshelfer" loading="lazy" width="900" height="620">
           </a>
@@ -609,6 +784,7 @@
         </article>
 
         <article class="solution-card">
+          <div class="card-index">08</div>
           <a class="image-link" href="https://www.amazon.de/dp/B0DPPM5YJJ?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Lern-Timer fuer Schreibtisch und Fokus ansehen">
             <img src="assets/products/generated/amazon-student-desk-timer.png" alt="Lern-Timer fuer Schreibtisch und Fokus" loading="lazy" width="900" height="620">
           </a>
@@ -640,7 +816,7 @@
         <div class="section-head">
           <div>
             <div class="section-label">Warum AIStack24?</div>
-            <h2>Kaufnaeher, weil es beim echten Nervpunkt startet.</h2>
+            <h2>Gebaut fuer schnelle Kaufentscheidungen, nicht fuer endlose Texte.</h2>
           </div>
           <p>Menschen klicken schneller, wenn sie ihr Problem sofort wiedererkennen. Genau darauf ist diese Seite gebaut.</p>
         </div>
@@ -666,5 +842,9 @@
       </div>
     </div>
   </footer>
+  <a class="mobile-bar" href="#solutions" aria-label="Heutige Loesungen ansehen">
+    <span>8/8 direkte Produktlinks aktiv</span>
+    <span>Ansehen</span>
+  </a>
 </body>
 </html>
