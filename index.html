@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AIStack24 - Produkte gegen nervige Alltagsprobleme</title>
-  <meta name="description" content="Taeglich neue Internet-Finds fuer Kabelchaos, Haushalt, Haustiere, Kueche, Auto, Familie und Homeoffice. Kleine Produkte, die echte Probleme loesen.">
+  <meta name="description" content="Täglich neue Internet-Finds für Kabelchaos, Haushalt, Haustiere, Küche, Auto, Familie und Homeoffice. Kleine Produkte, die echte Probleme lösen.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#07101f">
   <meta property="og:title" content="AIStack24 - Produkte gegen nervige Alltagsprobleme">
-  <meta property="og:description" content="Problem sehen, Loesung finden, Produkt pruefen. Internet-Finds fuer Alltag, Arbeit und Zuhause.">
+  <meta property="og:description" content="Problem sehen, Lösung finden, Produkt prüfen. Internet-Finds für Alltag, Arbeit und Zuhause.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aistack24.github.io/aistack24-hub/">
   <meta property="og:image" content="https://aistack24.github.io/aistack24-hub/assets/logo-2048.png">
@@ -545,6 +545,197 @@
         font-weight: 950;
       }
     }
+    .fast-hero {
+      padding: clamp(38px, 6vw, 68px) 0 clamp(22px, 4vw, 36px);
+    }
+    .fast-grid {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 28px;
+    }
+    .drop {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #dceaff;
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .drop i {
+      width: 9px;
+      height: 9px;
+      display: inline-block;
+      border-radius: 50%;
+      background: var(--blue-2);
+      box-shadow: 0 0 18px var(--blue-2);
+    }
+    .fast-copy h1 {
+      margin: 10px 0 0;
+      font-size: clamp(56px, 8.4vw, 116px);
+      line-height: .86;
+    }
+    .fast-copy p {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 20px);
+      font-weight: 700;
+    }
+    .fast-cta {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      min-height: 58px;
+      padding: 14px 18px 14px 22px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--blue), var(--blue-3));
+      color: #fff;
+      text-decoration: none;
+      font-weight: 950;
+      box-shadow: 0 18px 42px rgba(31,125,255,.28);
+    }
+    .fast-cta span {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      background: rgba(255,255,255,.14);
+    }
+    .instant {
+      padding: 18px 0 38px;
+    }
+    .instant-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+      margin-bottom: 18px;
+    }
+    .instant-head h2 {
+      font-size: clamp(30px, 4vw, 45px);
+      letter-spacing: -.055em;
+    }
+    .disclosure {
+      flex: 0 0 auto;
+      padding: 8px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: #b9cae5;
+      font-size: 12px;
+      font-weight: 850;
+    }
+    .swipe-hint { display: none; }
+    .solution-card .card-body { padding: 14px 15px 13px; }
+    .solution-card h3 {
+      font-size: 23px;
+      margin: 0;
+    }
+    .quick-fix {
+      margin: 9px 0 0;
+      color: #afc1dd;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .ad-pill { color: #8fc4ff; }
+    .solution-card small {
+      margin-top: 9px;
+      font-size: 11px;
+    }
+    .affiliate-box.compact {
+      margin-top: 20px;
+      padding: 12px 14px;
+    }
+    .category-block { padding: 24px 0 22px; }
+    .category-title {
+      margin: 0 0 16px;
+      font-size: clamp(28px, 4vw, 40px);
+    }
+    .trust-section { padding: 28px 0 38px; }
+    .trust-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .trust-strip div {
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255,255,255,.04);
+    }
+    .trust-strip b {
+      display: block;
+      font-size: 16px;
+    }
+    .trust-strip span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 700px) {
+      .site-header { position: static; }
+      .nav { min-height: 58px; }
+      .brand { gap: 9px; font-size: 17px; }
+      .brand img { width: 36px; height: 36px; border-radius: 11px; }
+      .fast-hero { padding: 22px 0 18px; }
+      .fast-grid { display: block; }
+      .drop { font-size: 11px; }
+      .fast-copy h1 {
+        margin-top: 8px;
+        font-size: clamp(48px, 17vw, 66px);
+        line-height: .88;
+        letter-spacing: -.065em;
+      }
+      .fast-copy p {
+        margin-top: 10px;
+        font-size: 15px;
+      }
+      .fast-cta { display: none; }
+      .instant {
+        padding: 10px 0 22px;
+      }
+      .instant-head {
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .instant-head .section-label { margin-bottom: 4px; font-size: 11px; }
+      .instant-head h2 { font-size: 29px; }
+      .disclosure { font-size: 10px; padding: 6px 8px; }
+      .swipe-hint {
+        display: block;
+        margin: -2px 0 10px;
+        color: #8da5c8;
+        font-size: 12px;
+        font-weight: 800;
+      }
+      .solutions-grid {
+        display: flex;
+        justify-content: initial;
+        gap: 12px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        margin: 0 -11px;
+        padding: 0 11px 7px;
+      }
+      .solutions-grid::-webkit-scrollbar { display: none; }
+      .solution-card {
+        flex: 0 0 min(79vw, 300px);
+        scroll-snap-align: start;
+      }
+      .image-link { aspect-ratio: 1.45 / 1; }
+      .solution-card h3 { font-size: 21px; }
+      .card-cta { min-height: 46px; padding: 11px 12px; }
+      .affiliate-box.compact { font-size: 12px; }
+      .category-block { padding: 22px 0 12px; }
+      .category-title { font-size: 28px; margin-bottom: 11px; }
+      .trust-section { padding: 20px 0 25px; }
+      .trust-strip { grid-template-columns: 1fr; gap: 8px; }
+      .trust-strip div { padding: 12px 13px; }
+      .mobile-bar { display: none; }
+      footer { padding-bottom: 34px; }
+    }
   </style>
 </head>
 <body>
@@ -563,46 +754,199 @@
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <div class="eyebrow">AIStack24 findet. Du klickst. Problem weg.</div>
-          <h1>Kleine Produkte gegen <span>nervige</span> Alltagsprobleme.</h1>
-          <p>Taeglich neue Internet-Finds fuer Kabelchaos, Tierhaare, Haushalt, Gym, Auto und Homeoffice. Kurz erklaert, sauber verlinkt, direkt kaufnah.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#solutions">Heutige Loesungen ansehen -></a>
-            <a class="btn btn-secondary" href="#problems">Problemkategorien ansehen</a>
-          </div>
+    <section class="fast-hero">
+      <div class="wrap fast-grid">
+        <div class="fast-copy">
+          <div class="drop"><i></i> Heute: 8 direkte Finds</div>
+          <h1>Problem?<br><span>Fix gefunden.</span></h1>
+          <p>Kleine Helfer. Direkt zum Produkt.</p>
         </div>
-        <aside class="hero-card" aria-label="AIStack24 Zusammenfassung">
-          <img src="assets/logo.svg" alt="">
-          <h2>Heute geladene Probleme</h2>
-          <p>Erst erkennst du den Nervpunkt. Dann siehst du die einfache Produktloesung.</p>
-          <div class="hero-problems">
-
-            <a class="hero-problem" href="#solutions">
-              <span>01</span>
-              <b>Tierhaare ueberall?</b>
-            </a>
-            <a class="hero-problem" href="#solutions">
-              <span>02</span>
-              <b>Schublade komplett chaotisch?</b>
-            </a>
-            <a class="hero-problem" href="#solutions">
-              <span>03</span>
-              <b>Training zuhause, aber kein Platz fuer Geraete?</b>
-            </a>
-          </div>
-          <div class="stat-row">
-            <div class="stat"><b>8</b><span>Probleme geladen</span></div>
-            <div class="stat"><b>8</b><span>Partnerlinks aktiv</span></div>
-          </div>
-        </aside>
+        <a class="fast-cta" href="#solutions">Heutige Finds <span aria-hidden="true">-></span></a>
       </div>
     </section>
 
-    <section id="problems" class="problem-strip" aria-label="Problemkategorien">
-      <div class="wrap chips">
+    <section id="solutions" class="section instant">
+      <div class="wrap">
+        <div class="instant-head">
+          <div>
+            <div class="section-label">Heute</div>
+            <h2>Finds zum Klicken</h2>
+          </div>
+          <span class="disclosure">Anzeige / Partnerlinks</span>
+        </div>
+        <p class="swipe-hint">Wischen für mehr -></p>
+        <div class="solutions-grid">
+
+        <article class="solution-card">
+          <div class="card-index">01</div>
+          <a class="image-link" href="https://www.amazon.de/dp/B07BN42GGB?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Tierhaar-Entferner für Sofa und Kleidung ansehen">
+            <img src="assets/products/generated/amazon-pet-hair-remover.png" alt="Tierhaar-Entferner für Sofa und Kleidung" loading="lazy" width="900" height="620">
+          </a>
+          <div class="card-body">
+            <div class="card-topline">
+              <span>Haustiere</span>
+              <span class="ad-pill">Anzeige</span>
+            </div>
+            <h3>Tierhaare überall?</h3>
+            <p class="quick-fix">Tierhaar-Entferner für Sofa und Kleidung</p>
+            <a class="card-cta" href="https://www.amazon.de/dp/B07BN42GGB?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
+              <span aria-hidden="true">-></span>
+            </a>
+            <small>Amazon / Preis dort prüfen</small>
+          </div>
+        </article>
+
+        <article class="solution-card">
+          <div class="card-index">02</div>
+          <a class="image-link" href="https://www.amazon.de/dp/B09CHJYY2X?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Schubladen-Organizer für Bad und Haushalt ansehen">
+            <img src="assets/products/generated/amazon-household-drawer-organizer.png" alt="Schubladen-Organizer für Bad und Haushalt" loading="lazy" width="900" height="620">
+          </a>
+          <div class="card-body">
+            <div class="card-topline">
+              <span>Haushalt &amp; Ordnung</span>
+              <span class="ad-pill">Anzeige</span>
+            </div>
+            <h3>Schublade komplett chaotisch?</h3>
+            <p class="quick-fix">Schubladen-Organizer für Bad und Haushalt</p>
+            <a class="card-cta" href="https://www.amazon.de/dp/B09CHJYY2X?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
+              <span aria-hidden="true">-></span>
+            </a>
+            <small>Amazon / Preis dort prüfen</small>
+          </div>
+        </article>
+
+        <article class="solution-card">
+          <div class="card-index">03</div>
+          <a class="image-link" href="https://www.amazon.de/dp/B08745JHW7?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Fitnessbaender-Set für Zuhause und Gym ansehen">
+            <img src="assets/products/generated/amazon-fitness-resistance-bands.png" alt="Fitnessbaender-Set für Zuhause und Gym" loading="lazy" width="900" height="620">
+          </a>
+          <div class="card-body">
+            <div class="card-topline">
+              <span>Fitness &amp; Gym</span>
+              <span class="ad-pill">Anzeige</span>
+            </div>
+            <h3>Training zuhause, aber kein Platz für Geräte?</h3>
+            <p class="quick-fix">Fitnessbaender-Set für Zuhause und Gym</p>
+            <a class="card-cta" href="https://www.amazon.de/dp/B08745JHW7?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
+              <span aria-hidden="true">-></span>
+            </a>
+            <small>Amazon / Preis dort prüfen</small>
+          </div>
+        </article>
+
+        <article class="solution-card">
+          <div class="card-index">04</div>
+          <a class="image-link" href="https://www.amazon.de/dp/B09FGJ7C6R?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Kabel-Clip-Set für den Schreibtisch ansehen">
+            <img src="assets/products/generated/amazon-desk-cable-clip-set.png" alt="Kabel-Clip-Set für den Schreibtisch" loading="lazy" width="900" height="620">
+          </a>
+          <div class="card-body">
+            <div class="card-topline">
+              <span>Büro &amp; Kabel</span>
+              <span class="ad-pill">Anzeige</span>
+            </div>
+            <h3>Offene Kabel im Office?</h3>
+            <p class="quick-fix">Kabel-Clip-Set für den Schreibtisch</p>
+            <a class="card-cta" href="https://www.amazon.de/dp/B09FGJ7C6R?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
+              <span aria-hidden="true">-></span>
+            </a>
+            <small>Amazon / Preis dort prüfen</small>
+          </div>
+        </article>
+
+        <article class="solution-card">
+          <div class="card-index">05</div>
+          <a class="image-link" href="https://www.amazon.de/dp/B07JMD9XFJ?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Beauty- und Travel-Organizer ansehen">
+            <img src="assets/products/generated/amazon-beauty-travel-organizer.png" alt="Beauty- und Travel-Organizer" loading="lazy" width="900" height="620">
+          </a>
+          <div class="card-body">
+            <div class="card-topline">
+              <span>Beauty &amp; Bad</span>
+              <span class="ad-pill">Anzeige</span>
+            </div>
+            <h3>Bad oder Tasche unordentlich?</h3>
+            <p class="quick-fix">Beauty- und Travel-Organizer</p>
+            <a class="card-cta" href="https://www.amazon.de/dp/B07JMD9XFJ?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
+              <span aria-hidden="true">-></span>
+            </a>
+            <small>Amazon / Preis dort prüfen</small>
+          </div>
+        </article>
+
+        <article class="solution-card">
+          <div class="card-index">06</div>
+          <a class="image-link" href="https://www.amazon.de/dp/B0DDQX7TZG?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Auto-Organizer für Rücksitz und Pendler ansehen">
+            <img src="assets/products/generated/amazon-car-backseat-organizer.png" alt="Auto-Organizer für Rücksitz und Pendler" loading="lazy" width="900" height="620">
+          </a>
+          <div class="card-body">
+            <div class="card-topline">
+              <span>Auto &amp; Pendler</span>
+              <span class="ad-pill">Anzeige</span>
+            </div>
+            <h3>Auto voller Kleinkram?</h3>
+            <p class="quick-fix">Auto-Organizer für Rücksitz und Pendler</p>
+            <a class="card-cta" href="https://www.amazon.de/dp/B0DDQX7TZG?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
+              <span aria-hidden="true">-></span>
+            </a>
+            <small>Amazon / Preis dort prüfen</small>
+          </div>
+        </article>
+
+        <article class="solution-card">
+          <div class="card-index">07</div>
+          <a class="image-link" href="https://www.amazon.de/dp/B0F1C1RDL7?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Silikon-Deckel und Aufbewahrungshelfer ansehen">
+            <img src="assets/products/generated/amazon-kitchen-storage-lids.png" alt="Silikon-Deckel und Aufbewahrungshelfer" loading="lazy" width="900" height="620">
+          </a>
+          <div class="card-body">
+            <div class="card-topline">
+              <span>Küche &amp; Alltag</span>
+              <span class="ad-pill">Anzeige</span>
+            </div>
+            <h3>Kein Platz in der Küche?</h3>
+            <p class="quick-fix">Silikon-Deckel und Aufbewahrungshelfer</p>
+            <a class="card-cta" href="https://www.amazon.de/dp/B0F1C1RDL7?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
+              <span aria-hidden="true">-></span>
+            </a>
+            <small>Amazon / Preis dort prüfen</small>
+          </div>
+        </article>
+
+        <article class="solution-card">
+          <div class="card-index">08</div>
+          <a class="image-link" href="https://www.amazon.de/dp/B0DPPM5YJJ?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Lern-Timer für Schreibtisch und Fokus ansehen">
+            <img src="assets/products/generated/amazon-student-desk-timer.png" alt="Lern-Timer für Schreibtisch und Fokus" loading="lazy" width="900" height="620">
+          </a>
+          <div class="card-body">
+            <div class="card-topline">
+              <span>Studenten &amp; Lernen</span>
+              <span class="ad-pill">Anzeige</span>
+            </div>
+            <h3>Handy lenkt beim Lernen ab?</h3>
+            <p class="quick-fix">Lern-Timer für Schreibtisch und Fokus</p>
+            <a class="card-cta" href="https://www.amazon.de/dp/B0DPPM5YJJ?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
+              <span>Auf Amazon ansehen</span>
+              <span aria-hidden="true">-></span>
+            </a>
+            <small>Amazon / Preis dort prüfen</small>
+          </div>
+        </article>
+        </div>
+        <div class="affiliate-box compact">
+          Werbung: Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Preis und Verfügbarkeit beim Anbieter prüfen.
+        </div>
+      </div>
+    </section>
+
+    <section id="problems" class="category-block" aria-label="Problemkategorien">
+      <div class="wrap">
+        <h2 class="category-title">Was nervt dich?</h2>
+        <div class="chips">
           <a class="chip active" href="#solutions">Alle Probleme</a>
           <a class="chip active" href="#solutions">Kabelchaos</a>
           <a class="chip active" href="#solutions">Tierhaare</a>
@@ -615,216 +959,15 @@
           <a class="chip" href="#solutions">Homeoffice</a>
           <a class="chip" href="#solutions">Taschen &amp; Unterwegs</a>
           <a class="chip active" href="#solutions">Studenten &amp; Lernen</a>
-      </div>
-    </section>
-
-    <section id="solutions" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Heute geloeste Probleme</div>
-            <h2>Erst der Nervpunkt. Dann der Klick zum Produkt.</h2>
-          </div>
-          <p>Keine Fake-Rabatte, keine erfundenen Bewertungen, keine Preise auf der Seite. Der Button fuehrt direkt zum Produkt beim Anbieter.</p>
-        </div>
-        <div class="solutions-grid">
-
-        <article class="solution-card">
-          <div class="card-index">01</div>
-          <a class="image-link" href="https://www.amazon.de/dp/B07BN42GGB?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Tierhaar-Entferner fuer Sofa und Kleidung ansehen">
-            <img src="assets/products/generated/amazon-pet-hair-remover.png" alt="Tierhaar-Entferner fuer Sofa und Kleidung" loading="lazy" width="900" height="620">
-          </a>
-          <div class="card-body">
-            <div class="card-topline">
-              <span>Haustiere</span>
-              <span>Amazon</span>
-            </div>
-            <h3>Tierhaare ueberall?</h3>
-            <p class="problem">Sofa, Kleidung und Autositze sehen nach jedem Tag wieder voll aus.</p>
-            <p class="solution">Ein einfacher Haarentferner macht das Problem sichtbar kleiner, ohne Staubsauger-Aufbau.</p>
-            <h4>Tierhaar-Entferner fuer Sofa und Kleidung</h4>
-            <a class="card-cta" href="https://www.amazon.de/dp/B07BN42GGB?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
-              <span>Aktuellen Preis pruefen</span>
-              <span aria-hidden="true">-></span>
-            </a>
-            <small>Preis bei Amazon pruefen. Keine Preisangabe auf dieser Seite.</small>
-          </div>
-        </article>
-
-        <article class="solution-card">
-          <div class="card-index">02</div>
-          <a class="image-link" href="https://www.amazon.de/dp/B09CHJYY2X?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Schubladen-Organizer fuer Bad und Haushalt ansehen">
-            <img src="assets/products/generated/amazon-household-drawer-organizer.png" alt="Schubladen-Organizer fuer Bad und Haushalt" loading="lazy" width="900" height="620">
-          </a>
-          <div class="card-body">
-            <div class="card-topline">
-              <span>Haushalt &amp; Ordnung</span>
-              <span>Amazon</span>
-            </div>
-            <h3>Schublade komplett chaotisch?</h3>
-            <p class="problem">Kleinteile verschwinden, alles liegt uebereinander und jeder Griff kostet Zeit.</p>
-            <p class="solution">Ein Organizer teilt die Schublade in klare Faecher und macht Kleinkram sofort sichtbar.</p>
-            <h4>Schubladen-Organizer fuer Bad und Haushalt</h4>
-            <a class="card-cta" href="https://www.amazon.de/dp/B09CHJYY2X?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
-              <span>Aktuellen Preis pruefen</span>
-              <span aria-hidden="true">-></span>
-            </a>
-            <small>Preis bei Amazon pruefen. Keine Preisangabe auf dieser Seite.</small>
-          </div>
-        </article>
-
-        <article class="solution-card">
-          <div class="card-index">03</div>
-          <a class="image-link" href="https://www.amazon.de/dp/B08745JHW7?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Fitnessbaender-Set fuer Zuhause und Gym ansehen">
-            <img src="assets/products/generated/amazon-fitness-resistance-bands.png" alt="Fitnessbaender-Set fuer Zuhause und Gym" loading="lazy" width="900" height="620">
-          </a>
-          <div class="card-body">
-            <div class="card-topline">
-              <span>Fitness &amp; Gym</span>
-              <span>Amazon</span>
-            </div>
-            <h3>Training zuhause, aber kein Platz fuer Geraete?</h3>
-            <p class="problem">Hanteln, Bank und grosse Geraete brauchen Platz, den viele Wohnungen nicht haben.</p>
-            <p class="solution">Ein Fitnessbaender-Set passt in jede Tasche und macht schnelle Uebungen zuhause oder im Gym einfacher.</p>
-            <h4>Fitnessbaender-Set fuer Zuhause und Gym</h4>
-            <a class="card-cta" href="https://www.amazon.de/dp/B08745JHW7?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
-              <span>Aktuellen Preis pruefen</span>
-              <span aria-hidden="true">-></span>
-            </a>
-            <small>Preis bei Amazon pruefen. Keine Preisangabe auf dieser Seite.</small>
-          </div>
-        </article>
-
-        <article class="solution-card">
-          <div class="card-index">04</div>
-          <a class="image-link" href="https://www.amazon.de/dp/B09FGJ7C6R?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Kabel-Clip-Set fuer den Schreibtisch ansehen">
-            <img src="assets/products/generated/amazon-desk-cable-clip-set.png" alt="Kabel-Clip-Set fuer den Schreibtisch" loading="lazy" width="900" height="620">
-          </a>
-          <div class="card-body">
-            <div class="card-topline">
-              <span>Buero &amp; Kabel</span>
-              <span>Amazon</span>
-            </div>
-            <h3>Offene Kabel im Office?</h3>
-            <p class="problem">Ladekabel, USB-Kabel und Kopfhoerer liegen offen herum oder fallen hinter den Tisch.</p>
-            <p class="solution">Ein kleines Kabelsystem haelt die wichtigsten Kabel sichtbar, griffbereit und sauber.</p>
-            <h4>Kabel-Clip-Set fuer den Schreibtisch</h4>
-            <a class="card-cta" href="https://www.amazon.de/dp/B09FGJ7C6R?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
-              <span>Aktuellen Preis pruefen</span>
-              <span aria-hidden="true">-></span>
-            </a>
-            <small>Preis bei Amazon pruefen. Keine Preisangabe auf dieser Seite.</small>
-          </div>
-        </article>
-
-        <article class="solution-card">
-          <div class="card-index">05</div>
-          <a class="image-link" href="https://www.amazon.de/dp/B07JMD9XFJ?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Beauty- und Travel-Organizer ansehen">
-            <img src="assets/products/generated/amazon-beauty-travel-organizer.png" alt="Beauty- und Travel-Organizer" loading="lazy" width="900" height="620">
-          </a>
-          <div class="card-body">
-            <div class="card-topline">
-              <span>Beauty &amp; Bad</span>
-              <span>Amazon</span>
-            </div>
-            <h3>Bad oder Tasche unordentlich?</h3>
-            <p class="problem">Pflegeprodukte, Kabel und Kleinkram landen lose in Schubladen oder Taschen.</p>
-            <p class="solution">Ein kompakter Organizer sortiert Selfcare-Zeug, Reisezeug und kleine Alltagsdinge.</p>
-            <h4>Beauty- und Travel-Organizer</h4>
-            <a class="card-cta" href="https://www.amazon.de/dp/B07JMD9XFJ?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
-              <span>Aktuellen Preis pruefen</span>
-              <span aria-hidden="true">-></span>
-            </a>
-            <small>Preis bei Amazon pruefen. Keine Preisangabe auf dieser Seite.</small>
-          </div>
-        </article>
-
-        <article class="solution-card">
-          <div class="card-index">06</div>
-          <a class="image-link" href="https://www.amazon.de/dp/B0DDQX7TZG?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Auto-Organizer fuer Ruecksitz und Pendler ansehen">
-            <img src="assets/products/generated/amazon-car-backseat-organizer.png" alt="Auto-Organizer fuer Ruecksitz und Pendler" loading="lazy" width="900" height="620">
-          </a>
-          <div class="card-body">
-            <div class="card-topline">
-              <span>Auto &amp; Pendler</span>
-              <span>Amazon</span>
-            </div>
-            <h3>Auto voller Kleinkram?</h3>
-            <p class="problem">Snacks, Kabel, Flaschen und Familienzeug landen auf Sitzen, Boden oder in Tuertaschen.</p>
-            <p class="solution">Ein Auto-Organizer bringt die kleinen Dinge an einen festen Ort.</p>
-            <h4>Auto-Organizer fuer Ruecksitz und Pendler</h4>
-            <a class="card-cta" href="https://www.amazon.de/dp/B0DDQX7TZG?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
-              <span>Aktuellen Preis pruefen</span>
-              <span aria-hidden="true">-></span>
-            </a>
-            <small>Preis bei Amazon pruefen. Keine Preisangabe auf dieser Seite.</small>
-          </div>
-        </article>
-
-        <article class="solution-card">
-          <div class="card-index">07</div>
-          <a class="image-link" href="https://www.amazon.de/dp/B0F1C1RDL7?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Silikon-Deckel und Aufbewahrungshelfer ansehen">
-            <img src="assets/products/generated/amazon-kitchen-storage-lids.png" alt="Silikon-Deckel und Aufbewahrungshelfer" loading="lazy" width="900" height="620">
-          </a>
-          <div class="card-body">
-            <div class="card-topline">
-              <span>Kueche &amp; Alltag</span>
-              <span>Amazon</span>
-            </div>
-            <h3>Kein Platz in der Kueche?</h3>
-            <p class="problem">Reste, Schuesseln und Dosen landen offen oder mit wackeliger Folie im Kuehlschrank.</p>
-            <p class="solution">Flexible Aufbewahrungshelfer sparen Deckel-Suche und machen Reste schneller wegraeumbar.</p>
-            <h4>Silikon-Deckel und Aufbewahrungshelfer</h4>
-            <a class="card-cta" href="https://www.amazon.de/dp/B0F1C1RDL7?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
-              <span>Aktuellen Preis pruefen</span>
-              <span aria-hidden="true">-></span>
-            </a>
-            <small>Preis bei Amazon pruefen. Keine Preisangabe auf dieser Seite.</small>
-          </div>
-        </article>
-
-        <article class="solution-card">
-          <div class="card-index">08</div>
-          <a class="image-link" href="https://www.amazon.de/dp/B0DPPM5YJJ?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener" aria-label="Lern-Timer fuer Schreibtisch und Fokus ansehen">
-            <img src="assets/products/generated/amazon-student-desk-timer.png" alt="Lern-Timer fuer Schreibtisch und Fokus" loading="lazy" width="900" height="620">
-          </a>
-          <div class="card-body">
-            <div class="card-topline">
-              <span>Studenten &amp; Lernen</span>
-              <span>Amazon</span>
-            </div>
-            <h3>Handy lenkt beim Lernen ab?</h3>
-            <p class="problem">Der Timer ist auf dem Smartphone, aber genau dort wartet auch die Ablenkung.</p>
-            <p class="solution">Ein sichtbarer Schreibtisch-Timer hilft bei Fokusphasen ohne App-Gefummel.</p>
-            <h4>Lern-Timer fuer Schreibtisch und Fokus</h4>
-            <a class="card-cta" href="https://www.amazon.de/dp/B0DPPM5YJJ?tag=aistack24-21&amp;utm_source=aistack24&amp;utm_medium=linkhub&amp;utm_campaign=problem_solution" rel="sponsored nofollow noopener">
-              <span>Aktuellen Preis pruefen</span>
-              <span aria-hidden="true">-></span>
-            </a>
-            <small>Preis bei Amazon pruefen. Keine Preisangabe auf dieser Seite.</small>
-          </div>
-        </article>
-        </div>
-        <div class="affiliate-box">
-          Amazon-Hinweis: Als Amazon-Partner verdiene ich an qualifizierten Verkaeufen. Links koennen Werbung oder Affiliate-Links sein. Preise und Verfuegbarkeit pruefst du direkt beim Anbieter.
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Warum AIStack24?</div>
-            <h2>Gebaut fuer schnelle Kaufentscheidungen, nicht fuer endlose Texte.</h2>
-          </div>
-          <p>Menschen klicken schneller, wenn sie ihr Problem sofort wiedererkennen. Genau darauf ist diese Seite gebaut.</p>
-        </div>
-        <div class="why">
-          <div class="why-card"><b>3 Sekunden klar</b><p>Jede Karte startet mit einem Problem, das sofort verstanden wird.</p></div>
-          <div class="why-card"><b>Kleine Loesungen</b><p>Keine riesigen Anschaffungen, sondern einfache Dinge fuer Alltag und Arbeit.</p></div>
-          <div class="why-card"><b>Sauber gekennzeichnet</b><p>Affiliate-Hinweise bleiben sichtbar. Keine Fake-Preise, keine Fake-Bewertungen.</p></div>
-        </div>
+    <section class="trust-section">
+      <div class="wrap trust-strip">
+        <div><b>Direkter Link</b><span>Kein Produktsuchen.</span></div>
+        <div><b>Preis beim Anbieter</b><span>Keine Fake-Angebote.</span></div>
+        <div><b>Klar markiert</b><span>Affiliate-Links sichtbar.</span></div>
       </div>
     </section>
   </main>
@@ -833,7 +976,7 @@
     <div class="wrap footer-grid">
       <div>
         <b>AIStack24</b><br>
-        Internet-Finds, die echte Alltagsprobleme loesen. Alltag, Arbeit, Haushalt, Haustiere, Auto, Familie und Homeoffice.
+        Internet-Finds, die echte Alltagsprobleme lösen. Alltag, Arbeit, Haushalt, Haustiere, Auto, Familie und Homeoffice.
       </div>
       <div class="footer-links">
         <a href="https://t.me/AIStack24" rel="noopener">Telegram</a>
@@ -842,9 +985,5 @@
       </div>
     </div>
   </footer>
-  <a class="mobile-bar" href="#solutions" aria-label="Heutige Loesungen ansehen">
-    <span>8/8 direkte Produktlinks aktiv</span>
-    <span>Ansehen</span>
-  </a>
 </body>
 </html>
