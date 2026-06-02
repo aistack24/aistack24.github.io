@@ -1,0 +1,1477 @@
+﻿<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KI-Video Kundenstarter - Baue dein erstes verkaufbares KI-Service-Angebot | AIStack24</title>
+  <meta name="description" content="Ein cinematic Starter-Kit für alle, die mit KI-Videos ein klares Service-Angebot für Firmen bauen wollen - mit Vorlagen, Prompts und 7-Tage-Startplan.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#080a10">
+
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="KI-Video Kundenstarter - dein erstes verkaufbares KI-Angebot">
+  <meta property="og:description" content="Du kannst KI nutzen. Aber was verkaufst du damit? Dieses Starter-Kit macht daraus ein klares Video-Angebot.">
+  <meta property="og:url" content="https://aistack24.github.io/aistack24-hub/signal-to-video/">
+  <meta property="og:image" content="https://aistack24.github.io/aistack24-hub/assets/ebook/cover.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KI-Video Kundenstarter - dein erstes verkaufbares KI-Angebot">
+  <meta name="twitter:description" content="Ein Starter-Kit für alle, die KI nicht nur ausprobieren, sondern Firmen ein klares Video-Angebot machen wollen.">
+  <meta name="twitter:image" content="https://aistack24.github.io/aistack24-hub/assets/ebook/cover.webp">
+
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/logo-2048.png">
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --void: #080a10;
+      --night: #0e121b;
+      --night-2: #151b27;
+      --charcoal: #1b2230;
+      --glass: rgba(255, 255, 255, .065);
+      --glass-strong: rgba(255, 255, 255, .105);
+      --line: rgba(255, 255, 255, .12);
+      --line-strong: rgba(255, 255, 255, .22);
+      --text: #fbfcff;
+      --soft: #d4dae5;
+      --muted: #9ba5b6;
+      --dim: #6f798b;
+      --paper: #f5efe6;
+      --paper-2: #fff9ef;
+      --ink: #10141e;
+      --ink-soft: #596272;
+      --amber: #e4a34f;
+      --amber-2: #f2ca83;
+      --amber-deep: #9a5f19;
+      --blue: #7aa7ff;
+      --green: #74d0a2;
+      --red: #e08a96;
+      --max: 1180px;
+      --radius: 8px;
+      --shadow: 0 30px 90px rgba(0, 0, 0, .38);
+      --soft-shadow: 0 20px 60px rgba(13, 18, 28, .16);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; background: var(--void); }
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 18% -10%, rgba(228, 163, 79, .18), transparent 34%),
+        radial-gradient(circle at 80% 7%, rgba(122, 167, 255, .14), transparent 33%),
+        linear-gradient(180deg, var(--void) 0%, #0d111a 46%, var(--void) 100%);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+      letter-spacing: 0;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      pointer-events: none;
+      opacity: .18;
+      background-image:
+        repeating-radial-gradient(circle at 20% 30%, rgba(255, 255, 255, .08) 0 1px, transparent 1px 3px),
+        linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, .025) 45%, transparent 70%);
+      mix-blend-mode: overlay;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    h1, h2, h3, p { margin-top: 0; overflow-wrap: break-word; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+
+    .topline {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 18px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(8, 10, 16, .82);
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .topline strong { color: var(--amber-2); font-weight: 850; }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      height: 72px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(8, 10, 16, .76);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+
+    .brand img {
+      width: 34px;
+      height: 34px;
+      filter: drop-shadow(0 10px 26px rgba(122, 167, 255, .22));
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 720;
+    }
+
+    .nav-links a:not(.btn):hover { color: var(--text); }
+
+    .btn {
+      min-height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 24px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 999px;
+      background: linear-gradient(180deg, #ffd489 0%, var(--amber) 54%, #bd7829 100%);
+      color: #17120a;
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: 0;
+      box-shadow: 0 18px 38px rgba(228, 163, 79, .24);
+      text-align: center;
+      transition: transform .18s ease, box-shadow .18s ease, filter .18s ease, background .18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.04);
+      box-shadow: 0 24px 56px rgba(228, 163, 79, .30);
+    }
+
+    .btn.secondary {
+      background: rgba(255, 255, 255, .06);
+      color: var(--text);
+      border-color: var(--line-strong);
+      box-shadow: none;
+    }
+
+    .btn.secondary:hover {
+      background: rgba(255, 255, 255, .10);
+      box-shadow: none;
+    }
+
+    .btn.small {
+      min-height: 42px;
+      padding: 0 18px;
+      font-size: 14px;
+    }
+
+    .btn:focus-visible,
+    summary:focus-visible,
+    a:focus-visible {
+      outline: 3px solid rgba(228, 163, 79, .42);
+      outline-offset: 3px;
+    }
+
+    .hero {
+      position: relative;
+      min-height: min(830px, calc(100svh - 42px));
+      overflow: hidden;
+      isolation: isolate;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -20% -10% 0;
+      z-index: -2;
+      background:
+        radial-gradient(ellipse at 75% 35%, rgba(228, 163, 79, .26), transparent 30%),
+        radial-gradient(ellipse at 42% 0%, rgba(122, 167, 255, .18), transparent 33%),
+        linear-gradient(110deg, rgba(255, 255, 255, .05), transparent 24% 70%, rgba(228, 163, 79, .06));
+      transform: translate3d(0, var(--parallax-hero, 0px), 0);
+      transition: transform .08s linear;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(8, 10, 16, .08), var(--void) 100%);
+      background-size: 58px 58px, 58px 58px, auto;
+      mask-image: linear-gradient(to bottom, black 0%, black 52%, transparent 95%);
+    }
+
+    .hero-grid {
+      position: relative;
+      min-height: inherit;
+      display: grid;
+      grid-template-columns: minmax(0, 1.04fr) minmax(320px, .78fr);
+      gap: 58px;
+      align-items: center;
+      padding: 62px 0 76px;
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-grid > *,
+    .statement > *,
+    .preview-scene > *,
+    .trust-layout > *,
+    .final-card > * {
+      min-width: 0;
+    }
+
+    .cinema-tag {
+      display: inline-flex;
+      width: fit-content;
+      margin: 0 0 18px;
+      padding: 8px 12px;
+      border: 1px solid rgba(228, 163, 79, .28);
+      border-radius: 999px;
+      background: rgba(228, 163, 79, .12);
+      color: #f5d49c;
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 0 0 24px;
+      color: var(--text);
+      font-size: clamp(52px, 7.2vw, 92px);
+      line-height: .92;
+      font-weight: 950;
+      letter-spacing: 0;
+    }
+
+    .gold { color: #f3c681; }
+
+    .hero-lead {
+      max-width: 720px;
+      margin-bottom: 30px;
+      color: var(--soft);
+      font-size: clamp(18px, 2vw, 22px);
+      line-height: 1.55;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .micro-proof {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .micro-proof span {
+      padding: 8px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .045);
+    }
+
+    .cover-stage {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: 620px;
+      perspective: 1200px;
+    }
+
+    .cover-orbit {
+      position: absolute;
+      inset: 6% 1% 3%;
+      border: 1px solid rgba(255, 255, 255, .09);
+      border-radius: 50%;
+      transform: rotate(-14deg);
+      opacity: .7;
+    }
+
+    .cover-orbit::before,
+    .cover-orbit::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: var(--amber-2);
+      box-shadow: 0 0 34px rgba(242, 202, 131, .7);
+    }
+
+    .cover-orbit::before { top: 16%; right: 17%; }
+    .cover-orbit::after { left: 18%; bottom: 11%; background: var(--blue); }
+
+    .book-mockup {
+      position: relative;
+      width: min(420px, 88%);
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, .18);
+      background: #070b12;
+      transform: rotateY(-13deg) rotateX(5deg) translate3d(0, var(--cover-y, 0px), 0);
+      transform-style: preserve-3d;
+      filter: drop-shadow(0 36px 56px rgba(0, 0, 0, .46));
+      animation: floatBook 7s ease-in-out infinite;
+      transition: transform .08s linear;
+    }
+
+    .book-mockup::before {
+      content: "";
+      position: absolute;
+      top: 3%;
+      right: -6%;
+      width: 8%;
+      height: 94%;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      background: linear-gradient(90deg, #0b0e16, #273044 42%, #0e111a);
+      transform: translateZ(-22px) rotateY(32deg);
+      transform-origin: left center;
+    }
+
+    .book-mockup::after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      inset: 8% 4% auto;
+      height: 26%;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .13);
+      filter: blur(30px);
+      transform: translateZ(12px);
+      pointer-events: none;
+    }
+
+    .cover-texture {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: .56;
+      filter: blur(3px) brightness(.25) saturate(1.12);
+      transform: scale(1.08);
+    }
+
+    .cover-copy {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 34px;
+      background:
+        linear-gradient(135deg, rgba(8, 10, 16, .98) 0%, rgba(8, 10, 16, .84) 48%, rgba(8, 10, 16, .96) 100%),
+        radial-gradient(circle at 76% 22%, rgba(228, 163, 79, .34), transparent 28%);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .09);
+    }
+
+    .cover-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+
+    .cover-top img {
+      width: 32px;
+      height: 32px;
+      filter: drop-shadow(0 10px 22px rgba(122, 167, 255, .30));
+    }
+
+    .cover-rule {
+      height: 1px;
+      margin-top: 24px;
+      background: linear-gradient(90deg, rgba(228, 163, 79, .75), rgba(122, 167, 255, .42), transparent);
+    }
+
+    .cover-main p {
+      margin: 0 0 16px;
+      color: var(--amber-2);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .cover-main strong {
+      display: block;
+      color: var(--text);
+      font-size: clamp(34px, 3.45vw, 50px);
+      line-height: .94;
+      font-weight: 950;
+    }
+
+    .cover-main strong span { display: block; }
+
+    .cover-main small {
+      display: block;
+      max-width: 290px;
+      margin-top: 18px;
+      color: var(--soft);
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .cover-bottom {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+    }
+
+    .cover-bottom span {
+      min-height: 34px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 999px;
+      color: var(--amber-2);
+      font-size: 10px;
+      font-weight: 850;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, .045);
+    }
+
+    @keyframes floatBook {
+      0%, 100% { translate: 0 0; }
+      50% { translate: 0 -14px; }
+    }
+
+    .scene {
+      position: relative;
+      overflow: hidden;
+      padding: 112px 0;
+    }
+
+    #problem,
+    #angebot,
+    #preview,
+    #kit,
+    #plan,
+    #trust,
+    #faq,
+    #zugang {
+      scroll-margin-top: 94px;
+    }
+
+    .scene::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background: radial-gradient(circle at 18% 20%, rgba(228, 163, 79, .09), transparent 33%);
+    }
+
+    .scene.dark { background: var(--void); }
+    .scene.paper { background: var(--paper); color: var(--ink); }
+
+    .scene-head {
+      width: min(850px, 100%);
+      margin-bottom: 42px;
+    }
+
+    .scene-kicker {
+      margin-bottom: 13px;
+      color: var(--amber-2);
+      font-size: 12px;
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .paper .scene-kicker { color: var(--amber-deep); }
+
+    h2 {
+      margin-bottom: 17px;
+      font-size: clamp(38px, 5.5vw, 72px);
+      line-height: .98;
+      font-weight: 950;
+      letter-spacing: 0;
+    }
+
+    .scene-head p {
+      max-width: 760px;
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: clamp(17px, 1.7vw, 20px);
+      line-height: 1.62;
+    }
+
+    .paper .scene-head p { color: var(--ink-soft); }
+
+    .statement {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 28px;
+      align-items: end;
+    }
+
+    .statement h2 {
+      max-width: 880px;
+      margin-bottom: 0;
+    }
+
+    .statement-note {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--glass);
+      color: var(--soft);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .offer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .offer-card,
+    .result-item,
+    .trust-item,
+    .final-card {
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--glass-strong), rgba(255, 255, 255, .045));
+      box-shadow: 0 22px 58px rgba(0, 0, 0, .18);
+    }
+
+    .offer-card {
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      padding: 28px;
+    }
+
+    .offer-card span,
+    .result-item span {
+      display: inline-flex;
+      width: fit-content;
+      margin-bottom: 44px;
+      color: var(--amber-2);
+      font-size: 12px;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+
+    .offer-card h3 {
+      margin-bottom: 10px;
+      font-size: 27px;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .offer-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .result-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .result-item {
+      min-height: 205px;
+      padding: 24px;
+    }
+
+    .result-item span { margin-bottom: 38px; color: var(--amber-deep); }
+    .result-item h3 { margin-bottom: 9px; font-size: 21px; line-height: 1.12; }
+    .result-item p { margin: 0; color: var(--ink-soft); font-size: 14px; }
+
+    .preview-scene {
+      display: grid;
+      grid-template-columns: .78fr 1.22fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .preview-copy {
+      position: sticky;
+      top: 112px;
+    }
+
+    .preview-copy p {
+      color: var(--ink-soft);
+      font-size: 17px;
+      line-height: 1.62;
+    }
+
+    .preview-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      align-items: start;
+    }
+
+    .page-shot {
+      margin: 0;
+      border: 1px solid #e1d6c9;
+      border-radius: var(--radius);
+      background: var(--paper-2);
+      overflow: hidden;
+      box-shadow: 0 24px 58px rgba(16, 20, 30, .13);
+      transform: translateY(var(--shot-y, 0));
+      transition: transform .28s ease, box-shadow .28s ease;
+    }
+
+    .page-shot:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 32px 78px rgba(16, 20, 30, .18);
+    }
+
+    .page-shot:first-child {
+      grid-column: span 2;
+      transform: translateY(var(--shot-y, 0)) rotate(-1deg);
+    }
+
+    .page-shot:nth-child(2) { transform: translateY(var(--shot-y, 0)) rotate(1.2deg); }
+    .page-shot:nth-child(3) { transform: translateY(var(--shot-y, 0)) rotate(-.7deg); }
+    .page-shot img { width: 100%; height: auto; }
+
+    .module-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .module-card,
+    .day-card,
+    .faq-panel {
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--glass-strong), rgba(255, 255, 255, .045));
+      box-shadow: 0 22px 58px rgba(0, 0, 0, .18);
+    }
+
+    .module-card {
+      min-height: 230px;
+      padding: 24px;
+    }
+
+    .module-card span {
+      display: block;
+      margin-bottom: 34px;
+      color: var(--amber-2);
+      font-size: 12px;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+
+    .module-card h3 {
+      margin-bottom: 9px;
+      font-size: 22px;
+      line-height: 1.1;
+    }
+
+    .module-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .plan-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .day-card {
+      min-height: 166px;
+      padding: 17px;
+      border-color: #e2d7ca;
+      background: var(--paper-2);
+      box-shadow: 0 16px 42px rgba(16, 20, 30, .075);
+    }
+
+    .day-card b {
+      display: inline-flex;
+      margin-bottom: 24px;
+      color: var(--amber-deep);
+      font-size: 13px;
+    }
+
+    .day-card h3 {
+      margin-bottom: 8px;
+      font-size: 16px;
+      line-height: 1.16;
+    }
+
+    .day-card p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: .78fr 1.22fr;
+      gap: 44px;
+      align-items: start;
+    }
+
+    .faq-panel {
+      padding: 7px 24px;
+    }
+
+    details {
+      padding: 21px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    details:last-child { border-bottom: 0; }
+
+    summary {
+      position: relative;
+      cursor: pointer;
+      list-style: none;
+      padding-right: 36px;
+      color: var(--text);
+      font-size: 18px;
+      font-weight: 850;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: "+";
+      position: absolute;
+      top: -8px;
+      right: 2px;
+      color: var(--amber-2);
+      font-size: 32px;
+      font-weight: 500;
+    }
+
+    details[open] summary::after { content: "-"; }
+
+    details p {
+      margin: 13px 38px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .trust-layout {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      gap: 42px;
+      align-items: start;
+    }
+
+    .trust-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .trust-item {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 15px;
+      padding: 22px;
+    }
+
+    .trust-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: var(--radius);
+      background: rgba(228, 163, 79, .12);
+      color: var(--amber-2);
+      font-size: 16px;
+      font-weight: 950;
+    }
+
+    .trust-item h3 {
+      margin-bottom: 6px;
+      font-size: 21px;
+      line-height: 1.12;
+    }
+
+    .trust-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .final-cta {
+      padding: 120px 0;
+      border-top: 1px solid var(--line);
+      background:
+        radial-gradient(circle at 50% 0%, rgba(228, 163, 79, .20), transparent 42%),
+        linear-gradient(180deg, var(--night) 0%, var(--void) 100%);
+    }
+
+    .final-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, .55fr);
+      gap: 34px;
+      align-items: center;
+      padding: clamp(28px, 5vw, 58px);
+      border-color: rgba(228, 163, 79, .24);
+    }
+
+    .final-card h2 {
+      margin-bottom: 16px;
+      font-size: clamp(38px, 5vw, 64px);
+    }
+
+    .final-card p {
+      max-width: 760px;
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .checkout-box {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(8, 10, 16, .62);
+    }
+
+    .checkout-box strong {
+      display: block;
+      margin-bottom: 9px;
+      color: var(--amber-2);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .checkout-box p {
+      margin-bottom: 18px;
+      color: var(--soft);
+      font-size: 14px;
+    }
+
+    .checkout-box .btn { width: 100%; }
+
+    .safe-note {
+      display: block;
+      margin-top: 13px;
+      color: var(--dim);
+      font-size: 12px;
+      line-height: 1.45;
+      text-align: center;
+    }
+
+    footer {
+      padding: 34px 0 92px;
+      border-top: 1px solid var(--line);
+      background: var(--void);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 22px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a:hover { color: var(--text); }
+
+    .mobile-cta { display: none; }
+
+    .js .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .58s ease, transform .58s ease;
+    }
+
+    .js .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .delay-1 { transition-delay: .08s; }
+    .delay-2 { transition-delay: .16s; }
+    .delay-3 { transition-delay: .24s; }
+
+    @media (max-width: 1080px) {
+      .hero-grid,
+      .statement,
+      .preview-scene,
+      .trust-layout,
+      .faq-grid,
+      .final-card {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid { gap: 24px; }
+      .cover-stage {
+        min-height: auto;
+        padding: 10px 0 0;
+        place-items: start center;
+      }
+
+      .book-mockup { width: min(360px, 82%); }
+      .preview-copy { position: static; }
+      .result-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .module-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .plan-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 840px) {
+      .nav-links a:not(.btn) { display: none; }
+      .offer-grid { grid-template-columns: 1fr; }
+      .result-strip { grid-template-columns: 1fr; }
+      .module-grid { grid-template-columns: 1fr; }
+      .offer-card { min-height: 0; }
+      .offer-card span,
+      .result-item span { margin-bottom: 26px; }
+    }
+
+    @media (max-width: 640px) {
+      .wrap { width: min(var(--max), calc(100% - 28px)); }
+      .topline { font-size: 12px; }
+      .header { height: 64px; }
+      .nav-links .btn { display: none; }
+      .hero {
+        min-height: auto;
+      }
+      .hero-grid {
+        padding: 45px 0 54px;
+      }
+      h1 {
+        font-size: clamp(43px, 15.7vw, 61px);
+        line-height: .93;
+      }
+      .hero-lead {
+        font-size: 16px;
+        margin-bottom: 24px;
+      }
+      .hero-actions .btn {
+        width: 100%;
+      }
+      .hero-actions .btn.secondary { display: none; }
+      .micro-proof {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+      }
+      .micro-proof span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 8px;
+        text-align: center;
+        font-size: 11px;
+      }
+      .cover-stage {
+        position: relative;
+        top: auto;
+        right: auto;
+        z-index: 1;
+        width: min(260px, 82%);
+        margin: 24px auto 0;
+        opacity: 1;
+      }
+      .cover-orbit { inset: 4% 5% 2%; }
+      .book-mockup {
+        width: 100%;
+        transform: rotateY(-8deg) rotateX(4deg);
+      }
+      .cover-copy { padding: 22px; }
+      .cover-main strong { font-size: 27px; }
+      .cover-main small,
+      .cover-bottom { display: none; }
+      .scene { padding: 72px 0; }
+      h2 {
+        font-size: clamp(34px, 11.5vw, 48px);
+        line-height: 1;
+      }
+      .scene-head {
+        margin-bottom: 28px;
+      }
+      .scene-head p {
+        font-size: 16px;
+      }
+      .statement-note {
+        padding: 21px;
+      }
+      .offer-card,
+      .result-item,
+      .trust-item {
+        padding: 21px;
+      }
+      .preview-gallery {
+        grid-template-columns: 1fr;
+      }
+      .page-shot:first-child {
+        grid-column: span 1;
+      }
+      .trust-item {
+        grid-template-columns: 1fr;
+      }
+      .plan-grid { grid-template-columns: 1fr; }
+      .module-card,
+      .day-card {
+        min-height: 0;
+        padding: 21px;
+      }
+      .module-card span,
+      .day-card b {
+        margin-bottom: 18px;
+      }
+      .faq-panel { padding: 4px 18px; }
+      summary { font-size: 16px; }
+      .final-cta { padding: 80px 0 96px; }
+      .final-card {
+        padding: 24px;
+      }
+      footer { padding-bottom: 92px; }
+      .mobile-cta {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 80;
+        display: block;
+        padding: 10px 14px max(10px, env(safe-area-inset-bottom));
+        border-top: 1px solid var(--line-strong);
+        background: rgba(8, 10, 16, .94);
+        backdrop-filter: blur(18px);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(110%);
+        transition: opacity .22s ease, transform .22s ease;
+      }
+      .mobile-cta.is-visible {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+      .mobile-cta .btn { width: 100%; min-height: 50px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+      .js .reveal {
+        opacity: 1;
+        transform: none;
+      }
+      .hero::before,
+      .book-mockup,
+      .page-shot {
+        transform: none !important;
+      }
+    }
+  </style>
+
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <div class="topline">
+    <span><strong>KI-Video Kundenstarter</strong> Ein klares Angebot aus deiner KI-Fähigkeit machen.</span>
+  </div>
+
+  <header class="header">
+    <nav class="nav wrap" aria-label="Hauptnavigation">
+      <a class="brand" href="../" aria-label="AIStack24 Startseite">
+        <img src="../assets/logo.svg" alt="">
+        <span>AIStack24</span>
+      </a>
+      <div class="nav-links">
+        <a href="#problem">Problem</a>
+        <a href="#angebot">Angebot</a>
+        <a href="#kit">Inhalt</a>
+        <a href="#trust">Klarheit</a>
+        <a class="btn small" href="https://aistack7.gumroad.com/l/clientclip">Starter-Kit sichern</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="cinema-tag reveal">Starter-Kit für dein erstes KI-Service-Angebot</p>
+          <h1 id="hero-title" class="reveal delay-1">Du kannst KI nutzen. <span class="gold">Aber was verkaufst du damit?</span></h1>
+          <p class="hero-lead reveal delay-2">
+            Ein Starter-Kit, das dir zeigt, wie du aus KI-Kurzvideos ein klares Service-Angebot für Firmen machst - mit Vorlagen, Prompts und 7-Tage-Startplan.
+          </p>
+          <div class="hero-actions reveal delay-3">
+            <a class="btn" href="https://aistack7.gumroad.com/l/clientclip">Starter-Kit sichern</a>
+            <a class="btn secondary" href="#kit">Inhalt ansehen</a>
+          </div>
+          <div class="micro-proof reveal delay-3" aria-label="Produktumfang">
+            <span>28 Seiten</span>
+            <span>Prompts</span>
+            <span>7 Tage Plan</span>
+          </div>
+        </div>
+
+        <div class="cover-stage reveal delay-2" aria-label="E-Book Cover">
+          <div class="cover-orbit" aria-hidden="true"></div>
+          <figure class="book-mockup" data-parallax="book" aria-label="Cover des KI-Video Kundenstarter E-Books">
+            <img class="cover-texture" src="../assets/ebook/cover.webp" width="980" height="1268" alt="" aria-hidden="true">
+            <figcaption class="cover-copy">
+              <div>
+                <div class="cover-top">
+                  <img src="../assets/logo.svg" alt="">
+                  <span>AIStack24</span>
+                </div>
+                <div class="cover-rule"></div>
+              </div>
+              <div class="cover-main">
+                <p>Starter-Kit</p>
+                <strong><span>KI-Video</span><span>Kundenstarter</span></strong>
+                <small>Baue dein erstes klares Service-Angebot aus KI-Kurzvideos.</small>
+              </div>
+              <div class="cover-bottom" aria-hidden="true">
+                <span>Vorlagen</span>
+                <span>Prompts</span>
+                <span>Startplan</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene dark" id="problem">
+      <div class="wrap statement">
+        <div class="reveal">
+          <p class="scene-kicker">Das eigentliche Problem</p>
+          <h2>Viele lernen KI-Tools. Aber Kunden kaufen keine Tools.</h2>
+        </div>
+        <div class="statement-note reveal delay-1">
+          <p>Kunden kaufen Ergebnisse. Ein kurzer Clip, der ein Angebot erklärt. Eine Idee, die ein Produkt verständlich macht. Eine Nachricht, die nicht nach zufälligem KI-Gebastel klingt.</p>
+          <p>Genau dafür ist dieses Kit gebaut.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene dark" id="angebot">
+      <div class="wrap">
+        <div class="scene-head reveal">
+          <p class="scene-kicker">Aus Fähigkeit wird Angebot</p>
+          <h2>Du verkaufst nicht "KI". Du verkaufst einen klaren nächsten Schritt.</h2>
+          <p>Das Starter-Kit macht aus deiner KI-Fähigkeit ein kleines, verständliches Video-Angebot, das ein Kunde in Sekunden begreift.</p>
+        </div>
+
+        <div class="offer-grid">
+          <article class="offer-card reveal">
+            <span>Angebot 01</span>
+            <h3>Kurzvideo für ein Angebot</h3>
+            <p>Ein kompakter Clip, der ein Produkt, eine Website oder eine Dienstleistung schnell verständlich macht.</p>
+          </article>
+          <article class="offer-card reveal delay-1">
+            <span>Angebot 02</span>
+            <h3>Video-Idee + Text</h3>
+            <p>Hook, Ablauf und Botschaft für Firmen, die sichtbar werden wollen, aber keinen klaren Videowinkel haben.</p>
+          </article>
+          <article class="offer-card reveal delay-2">
+            <span>Angebot 03</span>
+            <h3>Social-Video-Preview</h3>
+            <p>Eine erste Vorschau, mit der ein Unternehmen sieht, wie sein Angebot als Kurzvideo wirken könnte.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene paper">
+      <div class="wrap">
+        <div class="scene-head reveal">
+          <p class="scene-kicker">Nach dem Lesen</p>
+          <h2>Du sollst nicht mehr wissen. Du sollst starten können.</h2>
+          <p>Das Kit führt dich zu konkreten Arbeitsunterlagen: Angebot, Zielkunde, Video-Idee und erste Nachricht.</p>
+        </div>
+
+        <div class="result-strip">
+          <article class="result-item reveal"><span>Output 01</span><h3>Dein Angebot</h3><p>Was du anbietest, wie du es nennst und wie du es einfach erklärst.</p></article>
+          <article class="result-item reveal delay-1"><span>Output 02</span><h3>Zielkunden-Logik</h3><p>Welche Firmen für dein kleines Video-Angebot sinnvoll sein könnten.</p></article>
+          <article class="result-item reveal delay-2"><span>Output 03</span><h3>Deine Video-Idee</h3><p>Wie du aus Website, Produkt und Nutzen einen kurzen Vorschlag baust.</p></article>
+          <article class="result-item reveal delay-3"><span>Output 04</span><h3>Deine erste Nachricht</h3><p>Wie du kontaktierst, ohne wie generischer KI-Spam zu wirken.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene paper" id="preview">
+      <div class="wrap preview-scene">
+        <div class="preview-copy reveal">
+          <p class="scene-kicker">Einblick ins Kit</p>
+          <h2>Vorlagen, Prompts und ein Ablauf, der nicht beim Lesen hängen bleibt.</h2>
+          <p>Keine lose Motivation. Du bekommst einen klaren Weg von "Ich kann KI bedienen" zu "Ich kann einem Kunden ein einfaches Video-Angebot erklären".</p>
+          <a class="btn" href="https://aistack7.gumroad.com/l/clientclip">Starter-Kit sichern</a>
+        </div>
+
+        <div class="preview-gallery reveal delay-1" aria-label="E-Book Vorschauseiten">
+          <figure class="page-shot" data-parallax="shot">
+            <img src="../assets/ebook/preview-contents.webp" loading="lazy" width="820" height="1061" alt="Inhaltsübersicht des KI-Video Kundenstarter E-Books">
+          </figure>
+          <figure class="page-shot" data-parallax="shot">
+            <img src="../assets/ebook/preview-video.webp" loading="lazy" width="820" height="1061" alt="Video-Ideen- und Prompt-Seite aus dem KI-Video Kundenstarter">
+          </figure>
+          <figure class="page-shot" data-parallax="shot">
+            <img src="../assets/ebook/preview-operations.webp" loading="lazy" width="820" height="1061" alt="Startplan- und Umsetzungsseite aus dem KI-Video Kundenstarter">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene dark" id="kit">
+      <div class="wrap">
+        <div class="scene-head reveal">
+          <p class="scene-kicker">Was drin steckt</p>
+          <h2>Die Vorlage bleibt stark. Der Look ist jetzt Kino.</h2>
+          <p>Aus der angehängten Funnel-HTML bleiben die verkaufbaren Kernbausteine: Angebot, Zielkunden, Video-Idee, Nachricht, Qualitätscheck und Startplan. Nur ohne falsche Versprechen und ohne Operator-Fachchinesisch im ersten Eindruck.</p>
+        </div>
+
+        <div class="module-grid">
+          <article class="module-card reveal"><span>Modul 01</span><h3>Angebots-Vorlage</h3><p>Formuliere dein KI-Video-Angebot so, dass ein Kunde Nutzen, Ergebnis und nächsten Schritt sofort versteht.</p></article>
+          <article class="module-card reveal delay-1"><span>Modul 02</span><h3>Kundenfilter</h3><p>Erkenne passende Firmen und vermeide wahllose Kontakte, die nur nach Massenakquise aussehen.</p></article>
+          <article class="module-card reveal delay-2"><span>Modul 03</span><h3>Video-Ideen-Prompt</h3><p>Baue aus Website, Produkt und Zielgruppe einen konkreten Kurzvideo-Vorschlag.</p></article>
+          <article class="module-card reveal"><span>Modul 04</span><h3>Nachrichten-Vorlagen</h3><p>Schreibe kurze, klare Erstkontakte mit Bezug, Vorschlag und sauberem nächsten Schritt.</p></article>
+          <article class="module-card reveal delay-1"><span>Modul 05</span><h3>Qualitäts-Checkliste</h3><p>Prüfe dein Angebot, bevor du unrealistische Claims, unklare Nutzen oder schwache Beispiele verschickst.</p></article>
+          <article class="module-card reveal delay-2"><span>Modul 06</span><h3>7-Tage-Startplan</h3><p>Ein einfacher Ablauf, damit aus Lesen wirklich Testen, Schreiben und Auswerten wird.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene paper" id="plan">
+      <div class="wrap">
+        <div class="scene-head reveal">
+          <p class="scene-kicker">Der erste Test</p>
+          <h2>Sieben Tage. Ein Angebot. Kein endloses Grübeln.</h2>
+          <p>Der Plan zwingt dich nicht in Perfektion. Er bringt dich zu einem kleinen, real testbaren Service-Angebot.</p>
+        </div>
+
+        <div class="plan-grid">
+          <article class="day-card reveal"><b>Tag 1</b><h3>Angebot wählen</h3><p>Entscheide, welches kleine KI-Video-Ergebnis du anbieten willst.</p></article>
+          <article class="day-card reveal delay-1"><b>Tag 2</b><h3>Zielkunden klären</h3><p>Lege fest, welche Firmen für den ersten Test sinnvoll passen könnten.</p></article>
+          <article class="day-card reveal delay-2"><b>Tag 3</b><h3>Beispiele sammeln</h3><p>Finde Websites, Produkte oder Angebote, bei denen ein kurzer Clip helfen kann.</p></article>
+          <article class="day-card reveal"><b>Tag 4</b><h3>Video-Idee bauen</h3><p>Formuliere Hook, Botschaft, Ablauf und mögliche Szenen.</p></article>
+          <article class="day-card reveal delay-1"><b>Tag 5</b><h3>Nachricht schreiben</h3><p>Baue eine kurze Nachricht mit Bezug, Vorschlag und klarer Erwartung.</p></article>
+          <article class="day-card reveal delay-2"><b>Tag 6</b><h3>Kontakte testen</h3><p>Schicke wenige saubere Kontakte statt wahllose Massenmails.</p></article>
+          <article class="day-card reveal delay-3"><b>Tag 7</b><h3>Auswerten</h3><p>Prüfe Antworten, Einwände und verbessere Angebot sowie Nachricht.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene dark" id="trust">
+      <div class="wrap trust-layout">
+        <div class="scene-head reveal">
+          <p class="scene-kicker">Klarheit statt Hype</p>
+          <h2>Kein Reichtumsversprechen. Kein Spam-System.</h2>
+          <p>Das Kit ist für Leute, die ein Angebot testen wollen. Nicht für Leute, die garantierte Ergebnisse ohne Umsetzung erwarten.</p>
+        </div>
+
+        <div class="trust-list">
+          <article class="trust-item reveal">
+            <div class="trust-mark">01</div>
+            <div>
+              <h3>Für Anfänger verständlich</h3>
+              <p>Du musst nicht als Agentur auftreten. Du brauchst einen klaren Vorschlag, eine einfache Leistung und saubere Kommunikation.</p>
+            </div>
+          </article>
+          <article class="trust-item reveal delay-1">
+            <div class="trust-mark">02</div>
+            <div>
+              <h3>Keine falschen Versprechen</h3>
+              <p>Das Kit zeigt Angebotslogik und Umsetzung. Umsatz hängt von Markt, Qualität, Preis, Kontaktarbeit und Ausdauer ab.</p>
+            </div>
+          </article>
+          <article class="trust-item reveal delay-2">
+            <div class="trust-mark">03</div>
+            <div>
+              <h3>Für echte Tests gebaut</h3>
+              <p>Du liest nicht nur. Du formulierst, prüfst, kontaktierst und verbesserst deinen Ansatz anhand echter Rückmeldungen.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene dark" id="faq">
+      <div class="wrap faq-grid">
+        <div class="scene-head reveal">
+          <p class="scene-kicker">Vor dem Kauf</p>
+          <h2>Erwartungen sauber halten.</h2>
+          <p>Die Seite darf stark verkaufen. Sie darf aber nicht so tun, als wäre Umsatz garantiert oder als gäbe es eine magische Abkürzung ohne Umsetzung.</p>
+        </div>
+
+        <div class="faq-panel reveal delay-1">
+          <details open>
+            <summary>Kann ich damit wirklich Geld verdienen?</summary>
+            <p>Das Kit zeigt dir, wie du ein KI-Video-Angebot formulierst und testest. Ob daraus Umsatz entsteht, hängt von Angebot, Qualität, Markt, Preis und Kontaktarbeit ab. Es gibt keine Garantie.</p>
+          </details>
+          <details>
+            <summary>Brauche ich schon Video-Erfahrung?</summary>
+            <p>Du musst nicht wie eine Agentur starten. Du solltest aber bereit sein, dich mit Hooks, einfachen Video-Ideen, Prompts und klarer Kommunikation zu beschäftigen.</p>
+          </details>
+          <details>
+            <summary>Was verkaufe ich danach konkret?</summary>
+            <p>Zum Beispiel einen kurzen Video-Entwurf, eine Social-Video-Preview, ein Video-Konzept oder einen Kurzclip für ein Produkt, eine Website oder eine Dienstleistung.</p>
+          </details>
+          <details>
+            <summary>Warum steht noch kein Checkout drin?</summary>
+            <p>Der direkte Checkout ist aktiv. Nach dem Kauf bekommst du das Starter-Kit direkt über Gumroad.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="zugang">
+      <div class="wrap">
+        <div class="final-card reveal">
+          <div>
+            <p class="scene-kicker">KI-Video Kundenstarter</p>
+            <h2>Mach aus KI endlich ein Angebot, das ein Kunde versteht.</h2>
+            <p>Ein Starter-Kit mit Vorlagen, Prompts, Checklisten und 7-Tage-Startplan für dein erstes testbares KI-Video-Service-Angebot.</p>
+          </div>
+          <aside class="checkout-box" aria-label="Starter-Kit sichern">
+            <strong>Aktueller Zugang</strong>
+            <p>Sichere dir das Starter-Kit direkt über Gumroad und starte mit dem Offer Builder.</p>
+            
+            <a class="btn" href="https://aistack7.gumroad.com/l/clientclip">Starter-Kit sichern</a>
+            <small class="safe-note">Keine Einkommensgarantie. Ergebnisse hängen von Umsetzung, Markt und Qualität ab.</small>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div>&copy; 2026 AIStack24. KI-Video Kundenstarter.<br>Hinweis: Inhalte dienen der operativen Weiterbildung. Keine Rechts-, Finanz- oder Einkommensberatung.</div>
+      <div class="footer-links">
+        <a href="../">AIStack24</a>
+        <a href="https://t.me/AIStack24" rel="noopener noreferrer" target="_blank">Telegram</a>
+        <a href="https://youtube.com/@aistack24" rel="noopener noreferrer" target="_blank">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta">
+    <a class="btn" href="https://aistack7.gumroad.com/l/clientclip">Starter-Kit sichern</a>
+  </div>
+
+  <script>
+    (() => {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const revealNodes = document.querySelectorAll(".reveal");
+
+      if (!("IntersectionObserver" in window) || reduceMotion) {
+        revealNodes.forEach((node) => node.classList.add("is-visible"));
+      } else {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.16, rootMargin: "0px 0px -36px" });
+        revealNodes.forEach((node) => observer.observe(node));
+      }
+
+      if (reduceMotion) return;
+
+      const root = document.documentElement;
+      const book = document.querySelector('[data-parallax="book"]');
+      const shots = Array.from(document.querySelectorAll('[data-parallax="shot"]'));
+      const mobileCta = document.querySelector(".mobile-cta");
+      let ticking = false;
+
+      const update = () => {
+        const y = window.scrollY || 0;
+        root.style.setProperty("--parallax-hero", `${Math.min(120, y * .12)}px`);
+        if (mobileCta) {
+          mobileCta.classList.toggle("is-visible", y > 520);
+        }
+        if (book) {
+          book.style.setProperty("--cover-y", `${Math.max(-36, Math.min(28, y * -.035))}px`);
+        }
+        shots.forEach((shot, index) => {
+          const rect = shot.getBoundingClientRect();
+          const center = rect.top + rect.height / 2 - window.innerHeight / 2;
+          const offset = Math.max(-18, Math.min(18, center * -.025 + index * 3));
+          shot.style.setProperty("--shot-y", `${offset}px`);
+        });
+        ticking = false;
+      };
+
+      const requestUpdate = () => {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      };
+
+      update();
+      window.addEventListener("scroll", requestUpdate, { passive: true });
+      window.addEventListener("resize", requestUpdate);
+    })();
+  </script>
+</body>
+</html>
